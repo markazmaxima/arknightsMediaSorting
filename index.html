@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+	<meta name="Keywords" content="arknights, video, playlist, music, sort">
+	<title>Quanta: Arknights</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/arknightsStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	
+	<!--teh void-->
+	<div class="void"></div>
+	
+	<!--the top navigation-->
+	<nav id="top-nav">
+		<ul>
+			<img src="img/arknightsLogo.png" style="height: 60px; float: left">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Videos</a></li>
+					<li><a href="#">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="#">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!--the end of top navigation-->
+	
+	<!--the top mobile navigation-->
+	<nav id="top-nav-mobile">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights&nbsp;Terminal</button>
+		<ul id="mobile-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Videos (PVs)</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Videos</a></li>
+					<li><a href="#">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Musics (EPs)</a>
+				<ul>
+					<li><a href="#">Operators Themes</a></li>
+					<li><a href="#">Enemies Themes</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="#">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!--the end of top mobile navigation-->
+	
+	<div class="top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 200px">
+		</picture>
+	</div>
+	<div class="m-top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 100px">
+		</picture>
+	</div>
+	
+	<!--the sub navigation-->
+	<div>
+		<fieldset>
+			<legend>Site News</legend>
+			<p>read more about [Arknights v0.2.0] site in:</p>
+			</br>
+			<a href="about.html" style="color: white; background: black; padding: 2px; text-decoration: none">about page</a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Videos</legend>
+			<a href="arknightsPVsPost.html" onClick="setAkVideoPartList01()"><div class="sub-nav">Post-launch PVs</div></a>
+			<a href="arknightsPVsPost.html" onClick="setAkVideoPartList02()"><div class="sub-nav">Post 1st year PVs</div></a>
+			<a href="arknightsPVsPost.html" onClick="setAkVideoPartList03()"><div class="sub-nav">Post 2nd year PVs</div></a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Musics</legend>
+			<a href="#"><div class="sub-nav">Operators Themes (not yet...)</div></a>
+			<a href="#"><div class="sub-nav">Enemies Themes (not yet...)</div></a>
+		</fieldset>
+	</div>
+		
+	<script src="js/globalJS.js"></script>
+	
+</body>
+
+<footer id="footer"><br>2021-2022 Quanta<br><br></footer>
+
+</html>

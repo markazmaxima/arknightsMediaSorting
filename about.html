@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+	<meta name="Keywords" content="arknights, video, playlist, music, sort">
+	<title>Arknights: about - Quanta</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
+	<link href="css/aboutStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	
+	<!--the void-->
+	<div class="void"></div>
+	
+	<!--the top navigation-->
+	<nav id="top-nav">
+		<ul>
+			<img src="img/arknightsLogo.png" style="height: 60px; float: left">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Videos</a></li>
+					<li><a href="#">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="#">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!--the end of top navigation-->
+	
+	<!--the top mobile navigation-->
+	<nav id="top-nav-mobile">
+		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights&nbsp;Terminal</button>
+		<ul id="mobile-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Videos (PVs)</a>
+				<ul>
+					<li><a href="arknightsPVsPost.html">Videos</a></li>
+					<li><a href="#">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Musics (EPs)</a>
+				<ul>
+					<li><a href="#">Operators Themes</a></li>
+					<li><a href="#">Enemies Themes</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta:</a>
+				<ul>
+					<li><a href="#">Main Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="setting.html">Setting</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!--the end of top mobile navigation-->
+	
+	<!--image-->
+	<div class="picture">	
+		<picture>
+			
+			<img src="img/logo_trans.png" alt="logo" style="width: 400px">
+		</picture>
+	</div>
+	<div class="m-picture">
+		<picture>
+			<img src="img/logo_trans.png" alt="logo" style="width: 200px">
+		</picture>
+	</div>
+	
+	<div>
+		<fieldset>
+			<legend>About</legend>
+			<p>2021-2022 Quanta</p>
+			</br>
+			<p>Develop by Markaz Maxima</p>
+		</fieldset>
+			<div></div>
+		<fieldset class="patch-note-01">
+			<legend>Site Update v0.1</legend>
+				<p>v0.2.0 (13 February 2022)</p>
+			</br>
+				<p>&rsaquo; the site have move to an independant repo.</p>
+			</br></br>
+				<p>v0.1.1 (13 February 2022)</p>
+			</br>
+				<p>&rsaquo; added the 2nd and 3rd part of the [Videos] playlist, it fully viewable now!</p>
+				<p>&rsaquo; enable quick switch in player page.</p>
+				<p>&rsaquo; added floating tooltip when hovering the exclamation mark symbol.</p>
+				<p>&rsaquo; now when the filter say ALL, it mean ALL of it.</p>
+			</br></br>
+				<p>v0.1.0 (12 February 2022)</p>
+			</br>
+				<p>&rsaquo; redo the playlist coding, now individual videos of individual playlist annual part can be view from the same page, reducing file count in website directory.</p>
+				<p>&rsaquo; added new [3D Animation] category in player page (1st year annual part doesn't have any 3d anime...).</p>
+				<p>&rsaquo; added exclamation mark for certain videos. RED = potential copyright, YELLOW = story spoiler and NONE = safe to watch.</p>
+				<p>&rsaquo; navigation bar was resized. now it always take the whole top browser, unless the max width meet.</p>
+				<p>&rsaquo; player page is now responsive for all device, global site min-width is 350px.</p>
+				<p>&rsaquo; the [all] filter actually show all relatable items, ALL OF IT.</p>
+				<p>&rsaquo; other miscellaneous change and fixed.</p>
+			</br></br>
+				<p>v0.0.5 (9 February 2022)</p>
+			</br>
+				<p>&rsaquo; added new [Dark Mode] setting. the dark mode is on by default and can be toggle in [Setting] page.</p>
+				<p>&rsaquo; patch in the problem with navigation transition. now when user transitioning from wide to small width and/or vice versa, the navigation bar won't bug out.</p>
+				<p>&rsaquo; added content in [Arknights - subpages ( arknightsPVsPost ). however, for mobile user it impossible and annoying to navigate for the time.</p>
+				<p>&rsaquo; change a little bit of navigation items.</p>
+				<p>&rsaquo; more content for [Arknights - subpages] after this.</p>
+			</br></br>
+				<p>v0.0.4 (31 January 2022)</p>
+			</br>
+				<p>&rsaquo; patch in the problem with navigation system in [Arknights - subpages].</p>
+				<p>&rsaquo; added [About] page for detailed information.</p>
+				<p>&rsaquo; smooth out the navigation bar transition between [Desktop], [Tablet] and [Mobile] resolution.</p>
+				<p>&rsaquo; fix up various element resolution through out the site. now they look nicer for mobile and tablet user.</p>
+			</br></br>
+				<p>v0.0.3 (29 January 2022)</p>
+			</br>
+				<p>&rsaquo; three page for [Other project: Arknights - subpages] have been added, but no content yet.</p>
+				<p>&rsaquo; new navigation system for mobile user (max-width: 600px).</p>
+				<p>&rsaquo; Arknights index page got new button.</p>
+				<p>&rsaquo; new css file for mobile user.</p>
+			</br></br>
+				<p>v0.0.2 (unrecorded)</p>
+			</br>
+				<p>&rsaquo; re-design the whole color, structure, etc.</p>
+				<p>&rsaquo; added another "index" page for [Arknights]</p>
+			</br></br>
+				<p>v0.0.1 (unrecorded)</p>
+			</br>
+				<p>&rsaquo; re-purpose old website backbone.</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Current Know Issues</legend>
+			<p>&rsaquo; it quite here...</p>
+		</fieldset>
+	</div>
+	
+	<script src="js/globalJS.js"></script>
+	
+</body>
+</html>

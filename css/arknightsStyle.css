@@ -1,0 +1,57 @@
+/* CSS Document */
+
+a{
+	text-decoration: none;
+}
+
+.top-logo{
+	text-align: center;
+}
+.m-top-logo{
+	display: none;
+	text-align: center;
+}
+
+.sub-nav{
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	height: 30px;
+	background-color: black;
+	padding: 5px;
+	margin-bottom: 15px;
+	transition-duration: 0.3s;
+	border: 5px solid darkred;
+	border-radius: 25px;
+}
+
+.sub-nav:hover{
+	font-size: 23px;
+	margin: 0px 10px 15px;
+	background-color: darkred;
+	background-image: linear-gradient(rgba(0,0,1,0.00),black);
+}
+
+@media (max-width: 1090px){
+	.sub-nav{
+		font-size: 23px;
+	}
+	.sub-nav:hover{
+		font-size: 21px;
+	}
+	.top-logo{
+		display: none;
+	}
+	.m-top-logo{
+		display: block;
+	}
+}
+
+@media (max-width: 720px){
+	.sub-nav{
+		font-size: 20px;
+	}
+	.sub-nav:hover{
+		font-size: 19px;
+	}
+}

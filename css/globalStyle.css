@@ -1,0 +1,199 @@
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	min-width: 350px;
+}
+
+.void{
+	height: 100px;
+}
+
+p{
+	color: white;
+	width: 100%;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.dark{
+	background: #270000;
+}
+
+.light{
+	background: white;
+}
+
+.dark p{
+	color: white;
+}
+
+.dark legend{
+	color: white;
+}
+
+.light p{
+	color: black;
+}
+
+.light legend{
+	color: black;
+}
+
+.m-nav{
+	display: none;
+	color: white;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	margin-left: 10px;
+	text-align: center;
+	text-overflow: clip;
+	background-color: black;
+	border: none;
+	transition-duration: 0.3s;
+}
+
+#top-nav-mobile{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+	padding: 0px;
+	background-color: black;
+	border-radius: 0px 0px 50px;
+	border-bottom: 3px solid darkred;
+}
+
+#top-nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 60px;
+	padding: 0px 50px;
+	background-color: black;
+	border-radius: 0px 0px 60px 60px;
+	border-bottom: 10px solid darkred;
+	transition-duration: 0.3s;
+}
+
+#top-nav ul{
+	display: block;
+	padding-bottom: 10px;
+	border-top: none;
+}
+
+#top-nav ul li{
+	float: left;
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+	transition-duration: 0.3s;
+}
+
+#top-nav ul li a{
+	display: block;
+	color: white;
+	padding: 0px 15px 0px;
+	font-size: 20px;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	background: linear-gradient(rgba(0,0,1,0.00),black);
+}
+
+#top-nav ul li a:hover{
+	background-color: darkred;
+}
+
+#top-nav ul li:hover ul{
+	display: block;
+}
+
+#top-nav ul li ul{
+	position: absolute;
+	display: none;
+	width: 200px;
+	background-color: black;
+	border-top: 5px solid darkred;
+	border-left: 5px solid darkred;
+	border-right: 10px solid darkred;
+	border-radius: 0px 0px 15px 15px;
+	transition-duration: 0.3s;
+}
+
+#top-nav ul li ul li{
+	float: left;
+	position: relative;
+	display: block;
+	line-height: 50px;
+	border: none;
+	transition-duration: 0.3s;
+}
+
+#top-nav ul li ul li a{
+	display: block;
+	font-size: 15px;
+	width: 170px;
+}
+
+fieldset{
+	text-align: left;
+	width: 600px;
+	min-width: 200px;
+	padding: 50px;
+	margin: auto auto 25px;
+	border: 5px solid grey;
+	border-radius: 25px;
+}
+
+legend{
+	color: white;
+	font-size: 30px;
+	padding: 0px 5px;
+}
+
+footer{
+	position: fixed;
+	display: none;
+	width: auto;
+	height: 100px;
+	bottom: 0px;
+	left: 300px;
+	right: 300px;
+	background-color: black;
+	border-radius: 100px 100px 0px 0px;
+	text-align: center;
+	color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #270000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+

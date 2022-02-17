@@ -77,8 +77,8 @@
 	
 	<div>
 		<fieldset class="dark-mode">
-			<legend class="legend">Theme</legend>
-			<label id="container" class="container">
+			<legend>Theme</legend>
+			<label class="container">
 				<input id="checkTheme" class="checkTheme" type="checkbox" onClick="setThemeButton()">
 				<span id="slider" class="slider"></span>
 			</label>
@@ -86,10 +86,19 @@
 				<p id="fontColorTheme">Dark Mode</p>
 			</div>
 		</fieldset>
+
+		<fieldset>
+			<legend>Experimental</legend>
+			<label class="container">
+				<input id="checkExp" class="checkExp" type="checkbox" onclick="setExpOn()">
+				<span id="slider" class="slider"></span>
+			</label>
+		</fieldset>
 		
 		<fieldset>
 			<legend>Reset Setting</legend>
-			<button type="button" id="reset" onClick="reset()">reset</button>
+			<button type="button" id="reset" onClick="reset()">reset setting</button>
+			<button type="button" id="clear" onclick="clear()">clear setting</button>
 		</fieldset>
 	</div>
 	

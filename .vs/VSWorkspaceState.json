@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aud",
+    "\\js",
+    "\\postPVs-playlist",
+    "\\postPVs-playlist\\css",
+    "\\postPVs-playlist\\postPVs03-playlist"
   ],
-  "SelectedNode": "\\arknightsAudiosPost.html",
   "PreviewInSolutionExplorer": false
 }

@@ -1,8 +1,14 @@
 // JavaScript Document
 
 setThemeInputButton();
+setExpInputButton();
 
 function reset(){
+	localStorage.setItem("siteTheme", "dark");
+	localStorage.setItem("experiment", "false");
+	location.reload();
+}
+function clear(){
 	localStorage.clear();
 	location.reload();
 }
@@ -16,6 +22,14 @@ function setThemeInputButton(){
 		document.getElementById("checkTheme").checked = false;
 	}
 }
+function setExpInputButton(){
+	var exp = localStorage.getItem("experiment");
+	if(exp=="true"){
+		document.getElementById("checkExp").checked=true;
+	} else if(exp=="false"){
+		document.getElementById("checkExp").checked=false;
+	}
+}
 
 function setThemeButton(){
 	var bdClr = localStorage.getItem("siteTheme");
@@ -26,6 +40,14 @@ function setThemeButton(){
 	} else if(bdClr == "light"){
 		document.getElementById("body").className = "dark";
 		localStorage.setItem("siteTheme", "dark");
+	}
+}
+function setExpOn(){
+	var expGet=localStorage.getItem("experiment");
+	if(expGet=="true"){
+		localStorage.setItem("experiment","false");
+	}else if(expGet=="false"){
+		localStorage.setItem("experiment","true");
 	}
 }
 

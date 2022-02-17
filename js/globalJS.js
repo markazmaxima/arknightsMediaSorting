@@ -1,5 +1,4 @@
 // JavaScript Document
-
 setGlobalTheme();
 
 function setGlobalTheme(){
@@ -14,7 +13,6 @@ function setGlobalTheme(){
 		location.reload();
 	}
 }
-
 function mNav(){
 	var topNav = document.getElementById("top-nav-mobile")
 	var mNav = document.getElementById("mobile-ul");

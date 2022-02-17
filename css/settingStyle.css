@@ -43,8 +43,14 @@
 .checkTheme:checked + .slider{
 	background: green;
 }
+.checkExp:checked + .slider{
+	background-color: green;
+}
 
 .checkTheme:checked + .slider::before{
+	transform: translateX(26px);
+}
+.checkExp:checked + .slider::before{
 	transform: translateX(26px);
 }
 
@@ -52,15 +58,19 @@
 	margin-top: 5px;
 }
 
-#reset{
+#reset,#clear{
 	text-decoration: none;
 	font-size: 20px;
 	padding: 5px;
 	background: red;
 	border: none;
+	margin-right: 10px;
 	cursor: pointer;
 }
 
 #reset:hover{
 	background: darkred;
+}
+#clear:hover{
+	background-color: darkred;
 }

@@ -1,199 +1,136 @@
-/* CSS Document */
-
+/*CSS Document*/
 *{
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
-
-html{
-	min-width: 350px;
+a{
+    text-decoration: none;
 }
-
-.void{
-	height: 100px;
+.top-bar{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 5px solid darkred;
+    border-radius: 0px 0px 50px 0px;
 }
-
-p{
-	color: white;
-	width: 100%;
-	font-size: 20px;
-	padding-bottom: 5px;
+.menu-header{
+    height: 50px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid darkred;
 }
-
+.top-bar-item{
+    float: left;
+    color: white;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+.top-bar div{
+    display: inline-block;
+    height: 50px;
+}
+.dark-shade-cover{
+    position: fixed;
+    display: none;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    background-color: black;
+    transition-duration: 0.2s;
+}
+nav{
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    transition-duration: 0.2s;
+}
+.top-bar :nth-child(1){
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0px 20px;
+}
+.menu-header :nth-child(1){
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0px 20px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: black;
+}
+ul ul{
+    display: none;
+    border-left: 5px solid darkred;
+}
 .dark{
 	background: #270000;
 }
-
 .light{
 	background: white;
 }
-
-.dark p{
-	color: white;
-}
-
-.dark legend{
-	color: white;
-}
-
-.light p{
-	color: black;
-}
-
 .light legend{
-	color: black;
+    color: black;
 }
-
-.m-nav{
-	display: none;
-	color: white;
-	top: 0px;
-	left: 0px;
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
-	margin-left: 10px;
-	text-align: center;
-	text-overflow: clip;
-	background-color: black;
-	border: none;
-	transition-duration: 0.3s;
+.light label{
+    color: black;
 }
-
-#top-nav-mobile{
-	display: none;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	width: auto;
-	height: auto;
-	padding: 0px;
-	background-color: black;
-	border-radius: 0px 0px 50px;
-	border-bottom: 3px solid darkred;
+.top-logo{
+    text-align: center;
+    width: 100%;
 }
-
-#top-nav{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	height: 60px;
-	padding: 0px 50px;
-	background-color: black;
-	border-radius: 0px 0px 60px 60px;
-	border-bottom: 10px solid darkred;
-	transition-duration: 0.3s;
+#mobile-logo{
+    display: none;
 }
-
-#top-nav ul{
-	display: block;
-	padding-bottom: 10px;
-	border-top: none;
-}
-
-#top-nav ul li{
-	float: left;
-	position: relative;
-	display: inline-block;
-	line-height: 60px;
-	transition-duration: 0.3s;
-}
-
-#top-nav ul li a{
-	display: block;
-	color: white;
-	padding: 0px 15px 0px;
-	font-size: 20px;
-	text-decoration: none;
-	transition-duration: 0.3s;
-	background: linear-gradient(rgba(0,0,1,0.00),black);
-}
-
-#top-nav ul li a:hover{
-	background-color: darkred;
-}
-
-#top-nav ul li:hover ul{
-	display: block;
-}
-
-#top-nav ul li ul{
-	position: absolute;
-	display: none;
-	width: 200px;
-	background-color: black;
-	border-top: 5px solid darkred;
-	border-left: 5px solid darkred;
-	border-right: 10px solid darkred;
-	border-radius: 0px 0px 15px 15px;
-	transition-duration: 0.3s;
-}
-
-#top-nav ul li ul li{
-	float: left;
-	position: relative;
-	display: block;
-	line-height: 50px;
-	border: none;
-	transition-duration: 0.3s;
-}
-
-#top-nav ul li ul li a{
-	display: block;
-	font-size: 15px;
-	width: 170px;
-}
-
 fieldset{
-	text-align: left;
-	width: 600px;
-	min-width: 200px;
-	padding: 50px;
-	margin: auto auto 25px;
-	border: 5px solid grey;
-	border-radius: 25px;
+    width: 500px;
+    padding: 20px;
+    margin: auto auto 5px;
+    border: 5px solid grey;
+    border-radius: 25px;
 }
-
 legend{
-	color: white;
-	font-size: 30px;
-	padding: 0px 5px;
+    color: white;
+    font-size: 30px;
+    padding: 0px 5px;
 }
-
-footer{
-	position: fixed;
-	display: none;
-	width: auto;
-	height: 100px;
-	bottom: 0px;
-	left: 300px;
-	right: 300px;
-	background-color: black;
-	border-radius: 100px 100px 0px 0px;
-	text-align: center;
-	color: white;
+p{
+    color: white;
 }
-
-/* width */
-::-webkit-scrollbar {
-	width: 7px;
+.sub-nav{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px;
+    height: 24px;
+    margin-bottom: 15px;
+    border: 3px solid darkred;
+    border-radius: 25px;
+    background-color: black;
+    transition-duration: 0.3s;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-	background: #270000;
+.sub-nav:hover{
+    background-image: linear-gradient(rgba(0,0,1,0.00),black);
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #888;
-	border-radius: 25px;
+.link-to-about{
+    color: white;
+    padding: 5px;
+    background-color: black;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
+@media (max-width:720px) {
+    #desktop-logo{
+        display: none;
+    }
+    #mobile-logo{
+        display: block;
+    }
+    fieldset{
+        width: auto;
+    }
 }
-

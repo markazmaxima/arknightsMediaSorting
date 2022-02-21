@@ -1,29 +1,27 @@
 /* CSS Document */
-
+p{
+	font-size: 18px;
+	margin-bottom: 2px;
+}
 .picture{
 	width: auto;
 	text-align: center;
 }
-
 .m-picture{
 	display: none;
 }
-
 .setting{
 	color: white;
 	text-align: center;
 }
-
 .patch-note-01{
 	display: block;
 	height: 500px;
 	overflow: scroll;
 }
-
 .patch-note-01::-webkit-scrollbar{
 	display: none;
 }
-
 @media (max-width:1140px){
 	.picture{
 		display: none;
@@ -33,7 +31,6 @@
 		text-align: center;
 	}
 }
-
 @media (max-width:720px){
 	.patch-note-01{
 		width: auto;

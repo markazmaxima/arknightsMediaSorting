@@ -1,64 +1,16 @@
 /* CSS Document */
-
 .dark-mode{
 	height: 100px;
 }
-
-.container{
-	position: relative;
-	display: inline-block;
-	height: 34px;
-	width: 60px;
-}
-
-.container input{
-	position: absolute;
-	opacity: 0;
-	height: 0px;
-	width: 0px;
-}
-
-.slider{
-	position: absolute;
+.btn-check-theme,.btn-check-experiment{
+	margin: 10px;
 	cursor: pointer;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	background: black;
-	transition: 0.3s;
 }
-
-.slider::before{
-	position: absolute;
-	content: "";
-	height: 26px;
-	width: 26px;
-	top: 4px;
-	left: 4px;
-	background: white;
-	transition: 0.3s;
+label{
+	color: white;
+	cursor: pointer;
 }
-
-.checkTheme:checked + .slider{
-	background: green;
-}
-.checkExp:checked + .slider{
-	background-color: green;
-}
-
-.checkTheme:checked + .slider::before{
-	transform: translateX(26px);
-}
-.checkExp:checked + .slider::before{
-	transform: translateX(26px);
-}
-
-#fontColorTheme{
-	margin-top: 5px;
-}
-
-#reset,#clear{
+#reset{
 	text-decoration: none;
 	font-size: 20px;
 	padding: 5px;
@@ -66,11 +18,5 @@
 	border: none;
 	margin-right: 10px;
 	cursor: pointer;
-}
-
-#reset:hover{
-	background: darkred;
-}
-#clear:hover{
-	background-color: darkred;
+	border-radius: 10px;
 }

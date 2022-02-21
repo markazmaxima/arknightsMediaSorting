@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+	<meta name="Keywords" content="arknights, video, playlist, music, sort">
+	<title>Arknights: post-launch pvs - Quanta</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+	<link href="css/arknightsPVsStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	<!--the top navigation-->
+    <nav>
+        <ul>
+            <div class="menu-header">
+                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Media</a>
+                <ul>
+                    <li><a href="videoPlayer.html">Videos</a></li>
+                    <li><a href="#">Musics</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Quanta</a>
+                <ul>
+                    <li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Other</a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="dark-shade-cover"></div>
+
+    <div class="top-bar">
+        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+        <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+    </div>
+    <!--the end of top navigation-->
+	
+	<div style="height: 50px;"></div>
+
+	<!--the filter bar-->
+	<div class="top-filter-bar">
+		<div id="videos_part_01" class="video-filter">
+			<button type="button" id="filt01" class="filter-item" onClick="filt01()" disabled>All</button>
+			<button type="button" id="filt02" class="filter-item" onClick="filt02()">Trailers</button>
+			<button type="button" id="filt03" class="filter-item" onClick="filt03()">PVs</button>
+			<button type="button" id="filt04" class="filter-item" onClick="filt04()">Anime</button>
+			<button type="button" id="filt05" class="filter-item" onClick="filt05()">3D animation</button>
+			<button type="button" id="filt06" class="filter-item" onClick="filt06()">Re-run</button>
+		</div>
+		<div class="annual-pv-filter">
+			<button type="button" id="pre-part" class="part-filter-item" onClick="prePart()" disabled>&lsaquo;</button>
+			<div id="name-filter-item" class="name-filter-item"></div>
+			<button type="button" id="nxt-part" class="part-filter-item" onClick="nxtPart()" disabled>&rsaquo;</button>
+		</div>
+	</div>
+	<!--the end of filter bar-->
+	
+	<!--the main content-->
+	<div class="container-parent">
+		
+		<!--the main video-->
+		<div class="container-left">
+			<div class="video-wrapper">
+				<iframe id="primary-video" allow="autoplay" allowfullscreen></iframe>
+			</div>
+			<div class="container-detail">
+				<div id="video-title" class="video-title">video title here [tap any video or filter it]</div>
+			</div>
+		</div>
+		
+		<div class="container-right">
+			<iframe id="switchable-playlist" src="postPVs-playlist/postPVs01-playlist/postAll.html" height="800" width="400"></iframe>
+		</div>
+	</div>
+	<!--the end of main content-->
+	
+	<div class="alert-mobile">you need screen of 350px wide and higher in width to display the page.</div>
+	
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/globalJS.js"></script>
+	<script src="js/arknightsPVsJS.js"></script>
+	
+</body>
+
+<footer id="footer"><br>2021-2022 Quanta<br><br></footer>
+	
+</html>

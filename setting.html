@@ -7,101 +7,73 @@
 	<meta name="Keywords" content="arknights, video, playlist, music, sort">
 	<title>Arknights: setting - Quanta</title>
 	<link rel="icon" type="image/png" href="../img/favicon.png">
-	<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
-	<link href="css/m.globalStyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/globalStyle.css" type="text/css">
 	<link href="css/settingStyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="body">
-	
-	<!--teh void-->
-	<div class="void"></div>
-	
 	<!--the top navigation-->
-	<nav id="top-nav">
-		<ul>
-			<img src="img/arknightsLogo.png" style="height: 60px; float: left">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Media</a>
-				<ul>
-					<li><a href="arknightsPVsPost.html">Videos</a></li>
-					<li><a href="#">Music</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Quanta:</a>
-				<ul>
-					<li><a href="https://markazmaxima.github.io/quanta/">Main Terminal</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Other</a>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="setting.html">Setting</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-	<!--the end of top navigation-->
-	
-	<!--the top mobile navigation-->
-	<nav id="top-nav-mobile">
-		<button id="m-nav" class="m-nav" type="button" value="0" onClick="mNav()">&#9776&nbsp;Arknights&nbsp;Terminal</button>
-		<ul id="mobile-ul">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Videos (PVs)</a>
-				<ul>
-					<li><a href="arknightsPVsPost.html">Videos</a></li>
-					<li><a href="#">Music</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Musics (EPs)</a>
-				<ul>
-					<li><a href="#">Operators Themes</a></li>
-					<li><a href="#">Enemies Themes</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Quanta:</a>
-				<ul>
-					<li><a href="https://markazmaxima.github.io/quanta/">Main Terminal</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Other</a>
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="setting.html">Setting</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-	<!--the end of top mobile navigation-->
-	
+    <nav>
+        <ul>
+            <div class="menu-header">
+                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Media</a>
+                <ul>
+                    <li><a href="videoPlayer.html">Videos</a></li>
+                    <li><a href="#">Musics</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Quanta</a>
+                <ul>
+                    <li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Other</a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+	<div class="dark-shade-cover"></div>
+
+    <div class="top-bar">
+        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+        <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+    </div>
+    <!--the end of top navigation-->
+
+	<div style="height: 50px;"></div>
+
 	<div>
-		<fieldset class="dark-mode">
+		<fieldset>
 			<legend>Theme</legend>
-			<label class="container">
-				<input id="checkTheme" class="checkTheme" type="checkbox" onClick="setThemeButton()">
-				<span id="slider" class="slider"></span>
-			</label>
-			<div>
-				<p id="fontColorTheme">Dark Mode</p>
-			</div>
+			<input id="btn-check-theme-light" class="btn-check-theme" name="theme-btn" type="radio">
+			<label for="btn-check-theme-light">Light Mode</label><br>
+			<input id="btn-check-theme-dark" class="btn-check-theme" name="theme-btn" type="radio">
+			<label for="btn-check-theme-dark">Dark Mode</label>
 		</fieldset>
 
 		<fieldset>
 			<legend>Experimental</legend>
-			<label class="container">
-				<input id="checkExp" class="checkExp" type="checkbox" onclick="setExpOn()">
-				<span id="slider" class="slider"></span>
-			</label>
+			<input id="btn-check-experiment-on" class="btn-check-experiment" name="experiment-btn" type="radio">
+			<label for="btn-check-experiment-on">On</label><br>
+			<input id="btn-check-experiment-off" class="btn-check-experiment" name="experiment-btn" type="radio">
+			<label for="btn-check-experiment-off">Off</label>
 		</fieldset>
 		
 		<fieldset>
 			<legend>Reset Setting</legend>
 			<button type="button" id="reset" onClick="reset()">reset setting</button>
-			<button type="button" id="clear" onclick="clear()">clear setting</button>
 		</fieldset>
 	</div>
 	
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/globalJS.js"></script>
 	<script src="js/settingJS.js"></script>
 	

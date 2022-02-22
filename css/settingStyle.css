@@ -1,22 +1,57 @@
 /* CSS Document */
-.dark-mode{
-	height: 100px;
+a {
+  color: black;
 }
-.btn-check-theme,.btn-check-experiment{
-	margin: 10px;
-	cursor: pointer;
+.toggle-setting-label {
+  font-size: 20px;
 }
-label{
-	color: white;
-	cursor: pointer;
+.toggle {
+  --width: 50px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+
+  display: inline-block;
+  cursor: pointer;
 }
-#reset{
-	text-decoration: none;
-	font-size: 20px;
-	padding: 5px;
-	background: red;
-	border: none;
-	margin-right: 10px;
-	cursor: pointer;
-	border-radius: 10px;
+.toggle__input {
+  display: none;
+}
+.toggle__fill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: #dddddd;
+  transition: background 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill {
+  background: #009578;
+}
+.toggle__fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill::after {
+  transform: translateX(var(--height));
+}
+.toggle-setting-label {
+  color: white;
+}
+.setting-btn {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  background: red;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }

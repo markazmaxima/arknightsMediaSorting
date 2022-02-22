@@ -5,41 +5,40 @@ $(document).ready(function(){
     function setThemeInputButton(){
         var thm = localStorage.getItem("siteTheme");
         if(thm=="dark"){
-            $("#btn-check-theme-dark").prop("checked", true);
+            $("#toggle-darkmode").prop("checked", true);
         } else if(thm=="light"){
-            $("#btn-check-theme-light").prop("checked", true);
+            $("#toggle-darkmode").prop("checked", false);
         }
     };
     function setExpInputButton(){
         var exp = localStorage.getItem("experiment");
         if(exp=="true"){
-            $("#btn-check-experiment-on").prop("checked", true);
+            $("#toggle-experiment").prop("checked", true);
         } else if(exp=="false"){
-            $("#btn-check-experiment-off").prop("checked", true);
+            $("#toggle-experiment").prop("checked", false);
         }
     }
 //theme btn
-    $("#light-theme-cluster").click(function(){
-        $("body").addClass("dark");
-        $("body").removeClass("light");
-        localStorage.setItem("siteTheme", "dark");
-    })
-    $("#btn-check-theme-dark").click(function(){
-        $("body").addClass("dark");
-        $("body").removeClass("light");
-        localStorage.setItem("siteTheme", "dark");
-    });
-    $("#btn-check-theme-light").click(function(){
-        $("body").addClass("light");
-        $("body").removeClass("dark");
-        localStorage.setItem("siteTheme", "light");
+    $("#toggle-darkmode").click(function(){
+        var tknDark = localStorage.getItem("siteTheme");
+        if(tknDark=="dark"){
+            $("body").removeClass("dark");
+            $("body").addClass("light");
+            localStorage.setItem("siteTheme", "light");
+        } else if(tknDark=="light"){
+            $("body").removeClass("light");
+            $("body").addClass("dark");
+            localStorage.setItem("siteTheme", "dark");
+        }
     });
 //experimental btn
-    $("#btn-check-experiment-on").click(function(){
-        localStorage.setItem("experiment", "true");
-    });
-    $("#btn-check-experiment-off").click(function(){
-        localStorage.setItem("experiment", "false");
+    $("#toggle-experiment").click(function(){
+        var tknExp = localStorage.getItem("experiment");
+        if(tknExp=="true"){
+            localStorage.setItem("experiment", "false");
+        } else if (tknExp=="false"){
+            localStorage.setItem("experiment", "true");
+        }
     });
 //reset btn
     $("#reset").click(function(){
@@ -48,6 +47,12 @@ $(document).ready(function(){
         location.reload();
     });
     $("#reset").hover(function(){
+        $(this).css("background-color", "darkred");
+    }, function(){
+        $(this).css("background-color", "red");
+    });
+
+    $("#setting-done").hover(function(){
         $(this).css("background-color", "darkred");
     }, function(){
         $(this).css("background-color", "red");

@@ -13,37 +13,10 @@
 
 <body id="body">
 	<!--the top navigation-->
-    <nav>
-        <ul>
-            <div class="menu-header">
-                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-                <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Media</a>
-                <ul>
-                    <li><a href="videoPlayer.html">Videos</a></li>
-                    <li><a href="#">Musics</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Quanta</a>
-                <ul>
-                    <li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Other</a>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="setting.html">Setting</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
 	<div class="dark-shade-cover"></div>
 
     <div class="top-bar">
-        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+        <a href="index.html" class="top-bar-item">&#9668;</a>
         <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
     </div>
     <!--the end of top navigation-->
@@ -53,23 +26,26 @@
 	<div>
 		<fieldset>
 			<legend>Theme</legend>
-			<input id="btn-check-theme-light" class="btn-check-theme" name="theme-btn" type="radio">
-			<label for="btn-check-theme-light">Light Mode</label><br>
-			<input id="btn-check-theme-dark" class="btn-check-theme" name="theme-btn" type="radio">
-			<label for="btn-check-theme-dark">Dark Mode</label>
+			<label class="toggle" for="toggle-darkmode">
+				<input class="toggle__input" type="checkbox" id="toggle-darkmode">
+				<div class="toggle__fill"></div>
+			</label>
+			<label for="myToggle" class="toggle-setting-label">Dark Mode</label>
 		</fieldset>
 
 		<fieldset>
 			<legend>Experimental</legend>
-			<input id="btn-check-experiment-on" class="btn-check-experiment" name="experiment-btn" type="radio">
-			<label for="btn-check-experiment-on">On</label><br>
-			<input id="btn-check-experiment-off" class="btn-check-experiment" name="experiment-btn" type="radio">
-			<label for="btn-check-experiment-off">Off</label>
+			<label class="toggle" for="toggle-experiment">
+				<input class="toggle__input" type="checkbox" id="toggle-experiment">
+				<div class="toggle__fill"></div>
+			</label>
+			<label for="myToggle" class="toggle-setting-label">Experimental</label>
 		</fieldset>
 		
 		<fieldset>
 			<legend>Reset Setting</legend>
-			<button type="button" id="reset" onClick="reset()">reset setting</button>
+			<button type="button" id="reset" class="setting-btn" onClick="reset()">reset setting</button>
+			<a href="index.html" id="setting-done" class="setting-btn">Done</a>
 		</fieldset>
 	</div>
 	

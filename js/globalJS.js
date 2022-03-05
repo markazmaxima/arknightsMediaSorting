@@ -16,8 +16,10 @@ $(document).ready(function(){
         var exp = localStorage.getItem("experiment");
         if(exp=="true"){
             $("#the-experiment").show();
+            $("#nav-setting").show();
         } else if(exp=="false"){
             $("#the-experiment").hide();
+            $("#nav-setting").hide();
         }
     };
 //hover anchor

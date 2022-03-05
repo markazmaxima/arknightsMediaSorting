@@ -47,14 +47,14 @@ $(document).ready(function(){
         location.reload();
     });
     $("#reset").hover(function(){
-        $(this).css("background-color", "darkred");
+        $(this).css("background-color", "#009578");
     }, function(){
-        $(this).css("background-color", "red");
+        $(this).css("background-color", "rgb(0, 68, 0)");
     });
 
     $("#setting-done").hover(function(){
-        $(this).css("background-color", "darkred");
+        $(this).css("background-color", "#009578");
     }, function(){
-        $(this).css("background-color", "red");
+        $(this).css("background-color", "rgb(0, 68, 0)");
     });
 });

@@ -3,9 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-color: rgb(42, 42, 42);
-}
 #void{
     height: 100px;
 }
@@ -22,13 +19,13 @@ a{
     height: 50px;
     width: 100%;
     background-color: black;
-    border-bottom: 5px solid rgb(75, 0, 0);
+    border-bottom: 5px solid darkred;
     border-radius: 0px 0px 50px 0px;
 }
 .menu-header{
     height: 50px;
     margin-bottom: 5px;
-    border-bottom: 5px solid rgb(75, 0, 0);
+    border-bottom: 5px solid darkred;
 }
 .top-bar-item{
     float: left;
@@ -79,10 +76,10 @@ nav a{
 }
 ul ul{
     display: none;
-    border-left: 5px solid rgb(75, 0, 0);
+    border-left: 5px solid darkred;
 }
 .dark{
-	background: #2a1919;
+	background: #270000;
 }
 .light{
 	background: white;

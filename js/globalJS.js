@@ -20,6 +20,9 @@ $(document).ready(function(){
         } else if(exp=="false"){
             $("#the-experiment").hide();
             $("#nav-setting").hide();
+        } else {
+            localStorage.setItem("experiment", "false");
+            location.reload();
         }
     };
 //hover anchor
@@ -79,7 +82,7 @@ $(document).ready(function(){
 
     $(".link-to-about").hover(function(){
         $(this).css("color", "white");
-        $(this).css("background-color", "darkred");
+        $(this).css("background-color", "rgb(75, 0, 0)");
     }, function(){
         $(this).css("color", "white");
         $(this).css("background-color", "black");

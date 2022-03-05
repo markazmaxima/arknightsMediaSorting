@@ -32,31 +32,35 @@ $(document).ready(function(){
     });
 //open menu
     $("#open-sidebar-menu").click(function(){
-        $("nav").css({
+        parent.$("nav").css({
             left: '0px'
         });
-        $(".dark-shade-cover").css({
-            left: '+300px'
-        });
-        $(".dark-shade-cover").show();
+        $(".dark-shade-cover").hide();
     });
 //close menu
     $("#close-sidebar-menu").click(function(){
         $("nav").css({
             left: '-300px'
         });
-        $(".dark-shade-cover").css({
-            left: '0px'
-        });
         $(".dark-shade-cover").hide();
     });
 
     $(".dark-shade-cover").click(function(){
         $(this).hide();
-        $("nav").css({
+        parent.$("nav").css({
             left: '-300px'
         });
         $("fieldset").show();
+    });
+
+    $("#nav-setting").click(function(){
+        $("iframe").attr("src", "setting.html");
+        
+        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/setting.html';
+        const nextTitle = 'My new page title';
+        const nextState = { additionalInformation: 'Updated the URL with JS' };
+
+        window.history.pushState(nextState, nextTitle, nextURL);
     });
 
     $(".sub-nav").hover(function(){

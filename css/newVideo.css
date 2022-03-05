@@ -1,0 +1,6 @@
+/* CSS Document */
+.main-middle-bar{
+    width: 1500px;
+    height: calc(56.25 / var(--width));
+    background-color: blue;
+}

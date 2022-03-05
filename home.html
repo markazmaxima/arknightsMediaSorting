@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+</head>
+<body>
+    <!--the top navigation-->
+    <div class="dark-shade-cover"></div>
+
+    <div class="top-bar">
+        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+        <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+    </div>
+    <!--the end of top navigation-->
+
+    <div id="void"></div>
+
+	<div id="desktop-logo" class="top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 200px">
+		</picture>
+	</div>
+    <div id="mobile-logo" class="top-logo">
+		<picture>
+			<img src="img/arknightsLogo.png" style="height: 100px">
+		</picture>
+	</div>
+
+	<!--the sub navigation-->
+	<div>
+		<fieldset>
+			<legend>Videos</legend>
+			<a href="videoPlayer.html" ><div class="sub-nav">All pv videos</div></a>
+		</fieldset>
+
+		<fieldset>
+			<legend>Musics</legend>
+			<a href="#"><div class="sub-nav">Themes (not yet...)</div></a>
+		</fieldset>
+
+        <fieldset id="the-experiment" hidden>
+            <legend>Experiment</legend>
+            <a href="audioPlayer.html" target="iframe-holder"><div class="sub-nav">Music Player (experimental)</div></a>
+        </fieldset>
+
+		<fieldset>
+			<legend>Site News</legend>
+			<p>read more about [Arknights v0.3.2 (5 March 2022)] site in:</p>
+			</br>
+			<a href="about.html" class="link-to-about" style="cursor: pointer;">about page</a>
+		</fieldset>
+	</div>
+    <!--the end of sub navigation-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/globalJS.js"></script>
+</body>
+</html>

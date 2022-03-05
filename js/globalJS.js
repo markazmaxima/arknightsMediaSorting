@@ -9,6 +9,7 @@ $(document).ready(function(){
             $("body").addClass("light");
         } else {
             localStorage.setItem("siteTheme", "dark");
+            localStorage.setItem("experiment", "false");
             location.reload();
         }
     };
@@ -20,9 +21,6 @@ $(document).ready(function(){
         } else if(exp=="false"){
             $("#the-experiment").hide();
             $("#nav-setting").hide();
-        } else {
-            localStorage.setItem("experiment", "false");
-            location.reload();
         }
     };
 //hover anchor

@@ -79,7 +79,7 @@ nav a{
 }
 ul ul{
     display: none;
-    border-left: 5px solid rgb(75, 0, 0);
+    border-left: 5px solid rgb(165, 0, 0);
 }
 .dark{
 	background: #2a1919;
@@ -103,7 +103,7 @@ ul ul{
 fieldset{
     width: 500px;
     padding: 20px;
-    margin: auto;
+    margin: auto auto 30px auto;
     border: 5px solid grey;
     border-radius: 25px;
 }
@@ -125,10 +125,8 @@ p{
     border: 3px solid rgb(75, 0, 0);
     border-radius: 25px;
     background-color: black;
-    transition-duration: 0.3s;
-}
-.sub-nav:hover{
     background-image: linear-gradient(rgba(0,0,1,0.00),black);
+    transition-duration: 0.3s;
 }
 .link-to-about{
     color: white;

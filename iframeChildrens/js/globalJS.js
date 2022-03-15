@@ -17,15 +17,15 @@ $(document).ready(function(){
         var exp = localStorage.getItem("experiment");
         if(exp=="true"){
             $("#the-experiment").show();
-            $("#nav-setting").show();
+            $("#nav-music").show();
         } else if(exp=="false"){
             $("#the-experiment").hide();
-            $("#nav-setting").hide();
+            $("#nav-music").hide();
         }
     };
 //hover anchor
     $("a").hover(function(){
-        $(this).css("background-color", "rgb(20, 20, 20)");
+        $(this).css("background-color", "rgb(51, 51, 51)");
     }, function(){
         $(this).css("background-color", "black");
     });
@@ -56,13 +56,25 @@ $(document).ready(function(){
         $("fieldset").show();
     });
 
-    $("#nav-setting").click(function(){
-        $("iframe").attr("src", "setting.html");
-        
-        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/setting.html';
-        const nextTitle = 'My new page title';
-        const nextState = { additionalInformation: 'Updated the URL with JS' };
-
+    $("#nav-index").click(function(){
+        $("iframe").attr("src", "iframeChildrens/index.html");
+        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/index.html';
+        const nextTitle = 'Home';
+        const nextState = {};
+        window.history.pushState(nextState, nextTitle, nextURL);
+    });
+    $("#nav-pv-videos").click(function(){
+        $("iframe").attr("src", "iframeChildrens/videoPlayer.html");
+        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/videoPlayer.html';
+        const nextTitle = 'PV videos player';
+        const nextState = {};
+        window.history.pushState(nextState, nextTitle, nextURL);
+    });
+    $("#nav-about").click(function(){
+        $("iframe").attr("src", "iframeChildrens/about.html");
+        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/about.html';
+        const nextTitle = 'About';
+        const nextState = {};
         window.history.pushState(nextState, nextTitle, nextURL);
     });
 

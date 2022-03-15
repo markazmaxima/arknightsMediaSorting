@@ -23,7 +23,11 @@ function pv_03(){
 
 function anime_01(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/TZcL5LzEQP8?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "[Anime]] Dossoles Holiday";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Dossoles Holiday";
+}
+function anime_02(){
+	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/G2UMdq5SU64?autoplay=1";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Episode 9: Stormwatch";
 }
 
 

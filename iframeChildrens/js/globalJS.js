@@ -57,8 +57,8 @@ $(document).ready(function(){
     });
 
     $("#nav-index").click(function(){
-        $("iframe").attr("src", "iframeChildrens/Index.html");
-        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/Index.html';
+        $("iframe").attr("src", "iframeChildrens/index.html");
+        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/index.html';
         const nextTitle = 'Home';
         const nextState = {};
         window.history.pushState(nextState, nextTitle, nextURL);

@@ -25,7 +25,7 @@ a {
   transition: background 0.2s;
 }
 .toggle__input:checked ~ .toggle__fill {
-  background: #009578;
+  background: #740000;
 }
 .toggle__fill::after {
   content: "";
@@ -49,7 +49,7 @@ a {
   text-decoration: none;
   font-size: 20px;
   padding: 5px;
-  background: rgb(0, 68, 0);
+  background: #740000;
   border: none;
   margin-right: 10px;
   cursor: pointer;

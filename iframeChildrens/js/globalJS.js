@@ -56,28 +56,6 @@ $(document).ready(function(){
         $("fieldset").show();
     });
 
-    $("#nav-index").click(function(){
-        $("iframe").attr("src", "iframeChildrens/index.html");
-        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/index.html';
-        const nextTitle = 'Home';
-        const nextState = {};
-        window.history.pushState(nextState, nextTitle, nextURL);
-    });
-    $("#nav-pv-videos").click(function(){
-        $("iframe").attr("src", "iframeChildrens/videoPlayer.html");
-        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/videoPlayer.html';
-        const nextTitle = 'PV videos player';
-        const nextState = {};
-        window.history.pushState(nextState, nextTitle, nextURL);
-    });
-    $("#nav-about").click(function(){
-        $("iframe").attr("src", "iframeChildrens/about.html");
-        const nextURL = 'https://markazmaxima.github.io/arknightsMediaSorting/about.html';
-        const nextTitle = 'About';
-        const nextState = {};
-        window.history.pushState(nextState, nextTitle, nextURL);
-    });
-
     $(".sub-nav").hover(function(){
         $(this).css("font-size", "22px");
         $(this).css("margin-left", "10px");

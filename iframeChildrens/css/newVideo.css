@@ -1,6 +1,62 @@
 /* CSS Document */
 .main-middle-bar{
-    width: 1500px;
-    height: calc(56.25 / var(--width));
-    background-color: blue;
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+}
+.wrapper{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    bottom: 0px;
+    margin: auto;
+}
+.left-flex-wrapper{
+    position: relative;
+    flex: 70%;
+}
+.right-flex-wrapper{
+    position: relative;
+    flex: 30%;
+}
+.player-box{
+    position: absolute;
+    width: 100%;
+    height: 76.25%;
+    border-radius: 25px;
+    background-color: black;
+}
+.player-details{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 78%;
+    border-radius: 25px;
+    background-color: red;
+}
+.player-tags{
+    display: inline-block;
+    color: white;
+    margin: 5px 0px 0px 15px;
+}
+p{
+    float: left;
+    margin-right: 5px;
+}
+.player-title{
+    color: white;
+    font-size: 24px;
+    margin: 5px 0px 0px 15px;
+}
+.playlist{
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    height: 75%;
+}
+iframe{
+    border-radius: 25px;
+    border-color: black;
 }

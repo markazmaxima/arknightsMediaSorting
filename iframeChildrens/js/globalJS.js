@@ -23,31 +23,26 @@ $(document).ready(function(){
             $("#nav-music").hide();
         }
     };
-//hover anchor
     $("a").hover(function(){
         $(this).css("background-color", "rgb(51, 51, 51)");
     }, function(){
         $(this).css("background-color", "black");
     });
-//click anchor
     $("li").click(function(){
         $("ul", this).slideToggle(300);
     });
-//open menu
     $("#open-sidebar-menu").click(function(){
         parent.$("nav").css({
             left: '0px'
         });
         $(".dark-shade-cover").hide();
     });
-//close menu
     $("#close-sidebar-menu").click(function(){
         $("nav").css({
             left: '-300px'
         });
         $(".dark-shade-cover").hide();
     });
-
     $(".dark-shade-cover").click(function(){
         $(this).hide();
         parent.$("nav").css({
@@ -55,7 +50,6 @@ $(document).ready(function(){
         });
         $("fieldset").show();
     });
-
     $(".sub-nav").hover(function(){
         $(this).css("font-size", "22px");
         $(this).css("margin-left", "10px");
@@ -67,7 +61,6 @@ $(document).ready(function(){
         $(this).css("margin-right", "0px");
         $(this).css("background-color", "black");
     });
-
     $(".link-to-about").hover(function(){
         $(this).css("color", "white");
         $(this).css("background-color", "rgb(75, 0, 0)");

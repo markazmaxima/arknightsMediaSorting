@@ -13,40 +13,32 @@
 </head>
 
 <body id="body">
-    <!--the top navigation-->
-    <nav>
-        <ul>
-            <div class="menu-header">
-                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-                <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Media</a>
-                <ul>
-                    <li><a href="videoPlayer.html">Videos</a></li>
-                    <li><a href="#">Musics</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Quanta</a>
-                <ul>
-                    <li><a href="https://markazmaxima.github.io/quanta/" target="_blank">Terminal</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="setting.html">Setting</a></li>
-        </ul>
-    </nav>
 
-    <div class="dark-shade-cover"></div>
-
-    <div class="top-bar">
-        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
-        <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-    </div>
-    <!--the end of top navigation-->
+    <div id="void"></div>
 
     <div class="main-middle-bar">
-        <div class="main-player"></div>
+        <div class="wrapper">
+            <div class="left-flex-wrapper">
+                <div class="player-box">
+                    <iframe src="https://www.youtube.com/embed/1RN7FxZa2FI" frameborder="0" width="100%" height="100%"></iframe>
+                </div>
+                <div class="player-details">
+                    <div class="player-tags">
+                        <p>tags</p>
+                        <p>tags</p>
+                        <p>tags</p>
+                    </div>
+                    <div class="player-title">default title</div>
+                </div>
+                
+            </div>
+
+            <div class="right-flex-wrapper">
+                <div class="playlist">
+                    <iframe src="postPVs-playlist/postPVs01-playlist/postAll.html" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>

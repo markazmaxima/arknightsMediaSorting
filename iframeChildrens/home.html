@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
-    <link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+
+	<link rel="stylesheet" href="css/globalStyle.css" type="text/css">
 </head>
+
 <body>
-    <!--the top navigation-->
-    <div class="dark-shade-cover"></div>
+	<!--the top navigation-->
+	<div class="dark-shade-cover"></div>
 
-    <div class="top-bar">
-        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
-        <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-    </div>
-    <!--the end of top navigation-->
+	<div class="top-bar">
+		<p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+		<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+	</div>
+	<!--the end of top navigation-->
 
-    <div id="void"></div>
+	<div id="void"></div>
 
 	<div id="desktop-logo" class="top-logo">
 		<picture>
 			<img src="img/arknightsLogo.png" style="height: 200px">
 		</picture>
 	</div>
-    <div id="mobile-logo" class="top-logo">
+	<div id="mobile-logo" class="top-logo">
 		<picture>
 			<img src="img/arknightsLogo.png" style="height: 100px">
 		</picture>
@@ -31,35 +33,55 @@
 	<div>
 		<fieldset>
 			<legend>Videos</legend>
-			<a href="videoPlayer.html" ><div class="sub-nav">Promotion Videos</div></a>
-			<a href="#" ><div class="sub-nav">Operators Theme (not yet)</div></a>
-			<a href="#" ><div class="sub-nav">Events Theme (not yet)</div></a>
-			<a href="#" ><div class="sub-nav">NPCs Theme (not yet)</div></a>
+			<a href="videoPlayer.html">
+				<div class="sub-nav">Promotion Videos</div>
+			</a>
+			<a href="#">
+				<div class="sub-nav">Operators Theme (not yet)</div>
+			</a>
+			<a href="#">
+				<div class="sub-nav">Events Theme (not yet)</div>
+			</a>
+			<a href="#">
+				<div class="sub-nav">NPCs Theme (not yet)</div>
+			</a>
 		</fieldset>
 
 		<fieldset>
 			<legend>Musics</legend>
-			<a href="#"><div class="sub-nav">Themes (not yet...)</div></a>
+			<a href="#">
+				<div class="sub-nav">Themes (not yet...)</div>
+			</a>
 		</fieldset>
 
-        <fieldset id="the-experiment" hidden>
-            <legend>Experiment</legend>
-            <a href="audioPlayer.html" target="iframe-holder"><div class="sub-nav">Music Player</div></a>
-        </fieldset>
+		<fieldset id="the-experiment" hidden>
+			<legend>Experiment</legend>
+			<p>this is an experimental section. any features and pages is unfinished and may mess up your browsing
+				experience, proceed with caution.</p>
+			<br>
+			<a href="audioPlayer.html">
+				<div class="sub-nav">Music Player</div>
+			</a>
+			<a href="operatorsTheme.html">
+				<div class="sub-nav">New Video Player</div>
+			</a>
+		</fieldset>
 
 		<fieldset>
 			<legend>Site News</legend>
 			<p>this site is still in development. what you see here maybe subject to change in future.</p>
 			<p>please clear any data from this site when a new version has been push.</p>
 			<br>
-			<p>read more about [Arknights v0.3.3 (15 March 2022)] site in:</p>
+			<p>read more about [Arknights v0.3.4 (16 March 2022)] site in:</p>
 			</br>
-			<a href="about.html" class="link-to-about" style="cursor: pointer; border-radius: 10px;">about page</a>
+			<a href="about.html" id="new-player" class="link-to-about" style="cursor: pointer; border-radius: 10px;">about page</a>
 		</fieldset>
 	</div>
-    <!--the end of sub navigation-->
+	<!--the end of sub navigation-->
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/globalJS.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/indexJS.js"></script>
+	<script></script>
 </body>
+
 </html>

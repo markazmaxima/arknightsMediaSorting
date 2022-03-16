@@ -16,6 +16,10 @@ function pv_03(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/p1f7aJHDGIQ?autoplay=1";
 	parent.document.getElementById("video-title").innerHTML = "[Event] Dossoles Holiday";
 }
+function pv_04(){
+	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/z7oM421AjPQ?autoplay=1";
+	parent.document.getElementById("video-title").innerHTML = "[PV] Episode 9: Stormwatch";
+}
 
 //
 //the animes video

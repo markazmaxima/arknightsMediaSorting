@@ -34,7 +34,7 @@
     height: 150px;
     top: 78%;
     border-radius: 25px;
-    background-color: red;
+    background-color: rgb(63, 63, 63);
 }
 .player-tags{
     display: inline-block;
@@ -45,7 +45,10 @@ p{
     float: left;
     margin-right: 5px;
 }
-.player-title{
+#video-tag{
+    color: rgb(182, 182, 182);
+}
+#player-title{
     color: white;
     font-size: 24px;
     margin: 5px 0px 0px 15px;

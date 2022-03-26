@@ -1,7 +1,7 @@
 /* CSS Document */
-#prof-link{
+.about-link{
 	text-decoration: none;
-	color: white;
+	color: aqua;
 }
 p{
 	font-size: 18px;

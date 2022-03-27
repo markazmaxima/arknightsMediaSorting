@@ -79,14 +79,74 @@ function ep20(){
 	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Crystallize]";
 }
 function ep21(){
-	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
-	parent.document.getElementById("player-title").innerHTML = "";
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/ABsYwuOexoM?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Lullabye]";
 }
 function ep22(){
-	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
-	parent.document.getElementById("player-title").innerHTML = "";
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/cjTn_7zQROg?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Lithos]";
+}
+function ep23(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/q12VGkM4t-o?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Tipsy]";
+}
+function ep24(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/1gsf4qvsLCM?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Till the Bell Tolls]";
+}
+function ep25(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/-DTDDYEV3r0?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Summer Wave]";
+}
+function ep26(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/sUb9uQYn2GM?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Till the Wave Ends]";
+}
+function ep27(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/nDft12RXHqM?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Neon-lit Bustle]";
+}
+function ep28(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/i81V92BRVRs?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Self-observation]";
+}
+function ep29(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/mt8KltZ9Ruo?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Daydaydream]";
+}
+function ep30(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/Q9niH21_mac?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Autumn Moods]";
+}
+function ep31(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/8YJ3xxspJ3M?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Gearing Up]";
+}
+function ep32(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/MpMto0d4tgg?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Feels]";
+}
+function ep33(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/EmGVfjGs1y8?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Voices]";
+}
+function ep34(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/bZqOYWozoMs?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Immutable]";
+}
+function ep35(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/YICw0lmzVfs?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Real Me]";
+}
+function ep36(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/SGUj4y7QJfo?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Heart Forest]";
+}
+function ep37(){
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/VuKzuSC1xTY?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [ManiFesto:]";
 }
 function ep(){
-	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
-	parent.document.getElementById("player-title").innerHTML = "";
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/NvO_p7KuXmw?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Arknights EP - [Winter Absolution]";
 }

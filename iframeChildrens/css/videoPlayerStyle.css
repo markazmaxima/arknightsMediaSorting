@@ -41,6 +41,13 @@
     color: white;
     margin: 5px 0px 0px 15px;
 }
+.playlist-switching-bar{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 78%;
+    background-color: grey;
+}
 p{
     float: left;
     margin-right: 5px;
@@ -51,7 +58,7 @@ p{
 #player-title{
     color: white;
     font-size: 24px;
-    margin: 5px 0px 0px 15px;
+    margin: 5px 15px 0px 15px;
 }
 .playlist{
     position: absolute;
@@ -62,4 +69,11 @@ p{
 iframe{
     border-radius: 25px;
     border-color: black;
+}
+.playlist-switcher{
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    height: 50%;
+    background-color: white;
 }

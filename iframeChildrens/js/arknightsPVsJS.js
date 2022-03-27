@@ -2,8 +2,6 @@
 
 checkArknightsPVsPlaylist();
 
-var akVideosPart = localStorage.getItem("akVideoPartList");
-
 function filt01(){
 	document.getElementById("filt01").disabled = true;
 	document.getElementById("filt02").disabled = false;
@@ -149,6 +147,7 @@ function checkArknightsPVsPlaylist(){
 		document.getElementById("name-filter-item").innerHTML = "3rd year videos"
 	} else {
 		localStorage.setItem("akVideoPartList", "1");
+		location.reload();
 	}
 }
 

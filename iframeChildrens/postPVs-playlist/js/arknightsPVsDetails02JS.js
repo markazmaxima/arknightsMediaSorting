@@ -188,7 +188,11 @@ function alt_02(){
 
 function rerun_01(){
 	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/3dY4XaV8d8A?autoplay=1";
-	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: The Great Chief Return]";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: The Great Chief Return";
+}
+function rerun_02(){
+	parent.document.getElementById("primary-video").src = "https://www.youtube.com/embed/zsuXNi_1160?autoplay=1";
+	parent.document.getElementById("video-title").innerHTML = "[Anime] Rerun Event: Maria Nearl";
 }
 
 

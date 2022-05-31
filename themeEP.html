@@ -1,53 +1,87 @@
-<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
-	<meta name="Keywords" content="arknights, video, playlist, music, sort">
-	<title>Arknights: Extended Play</title>
-	<link rel="icon" type="image/png" href="iframeChildrens/img/favicon.png">
-    <link rel="stylesheet" href="iframeChildrens/css/globalStyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+    <meta name="Keywords" content="arknights, video, playlist, music, sort">
+    <title>Arknights - extended play</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/videoPlayerStyle.css" type="text/css">
 </head>
+
 <body>
-    <!--the top navigation-->
-    <nav id="nav">
-        <ul>
-            <div class="menu-header">
-                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-                <img class="top-bar-item" src="iframeChildrens/img/arknightsLogo.png" alt="arknights">
+    <div id="main-center-content">
+        <div style="height: 75px;"></div>
+
+        <div class="main-middle-bar">
+            <div class="wrapper">
+                <div class="left-flex-wrapper">
+                    <div class="player-box">
+                        <iframe src="https://www.youtube.com/embed/6C5sfOOvWwA?autoplay=1" id="primary-video-wrapper"
+                            frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="player-details">
+                        <div class="player-tags">
+                            <p id="video-tag">#extended play</p>
+                        </div>
+                        <div id="player-title">Arknights EP - Code of Brawl [Speed of Light] DJ OKAWARI feat. Ai Ninomiya
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="right-flex-wrapper">
+                    <div class="playlist">
+                        <iframe id="ep-video-playlist" src="" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
             </div>
-            <li><a href="index.html" onclick="clsNav()">Home</a></li>
-            <li><a>Videos &#9662;</a>
-                <ul>
-                    <li><a href="videoPlayer.html" onclick="clsNav()">PVs</a></li>
-                    <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
-                </ul>
-            </li>
-            <li id="nav-music"><a>Musics &#9662;</a>
-                <ul>
-                    <li><a href="#">wut?</a></li>
-                </ul>
-            </li>
-            <li><a>Quanta &#9662;</a>
-                <ul>
-                    <li><a href="https://markazmaxima.github.io/quanta/" target="_blank" onclick="clsNav()">Terminal</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html" onclick="clsNav()">About</a></li>
-            <li><a href="iframeChildrens/setting.html" target="iframe-holder" onclick="clsNav()">Setting</a></li>
-        </ul>
-    </nav>
-    <!--the end of top navigation-->
+        </div>
+    </div>
 
-	<iframe id="iframe-index" src="iframeChildrens/themeEP.html" name="iframe-holder" frameborder="0"></iframe>
+    <div id="navigation-system">
+        <div class="top-bar">
+            <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+            <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+        </div>
 
-    <script src="iframeChildrens/js/jquery-3.6.0.min.js"></script>
-    <script src="iframeChildrens/js/globalJS.js"></script>
-    <script>
-        function clsNav() {
-            document.getElementById("nav").style.left = '-300px';
-        }
-    </script>
+        <div class="cover-for-nav-open"></div>
+
+        <nav id="nav">
+            <ul>
+                <div class="menu-header">
+                    <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                    <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+                </div>
+                <li><a href="index.html" onclick="clsNav()">Home</a></li>
+                <li><a>Videos &#9662;</a>
+                    <ul>
+                        <li><a href="videoPlayer.html" onclick="clsNav()">PVs</a></li>
+                        <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
+                    </ul>
+                </li>
+                <li id="nav-music"><a>Musics &#9662;</a>
+                    <ul>
+                        <li><a href="#">wut?</a></li>
+                    </ul>
+                </li>
+                <li><a>Quanta &#9662;</a>
+                    <ul>
+                        <li><a href="https://markazmaxima.github.io/quanta/" target="_blank"
+                                onclick="clsNav()">Terminal</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" onclick="clsNav()">About</a></li>
+                <li><a href="setting.html" target="_blank" onclick="clsNav()">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/globalJS.js"></script>
+    <script src="js/themeCollectJS.js"></script>
 </body>
+
 </html>

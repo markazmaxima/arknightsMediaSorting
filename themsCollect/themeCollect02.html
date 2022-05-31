@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/videoPlayerDetailStyle.css" type="text/css" />
+</head>
+<body>
+    <script src="js/themeCollectJS02.js"></script>
+	<script>
+		function prv01(){
+    		localStorage.setItem("ak-video-ep-token", "1");
+		}
+	</script>
+
+    <div>
+        <div style="position: fixed; width: 100%;">
+			<div class="playlist-sorter">
+				<a href="themeCollect01.html" onclick="prv01()">
+					<button id="switch-to-01" class="switch-left">&lsaquo;</button>
+				</a>
+				<div class="switch-title">
+					<p>Second part</p>
+				</div>
+				<button id="switch-right" class="switch-right">&rsaquo;</button>
+			</div>
+		</div>
+        <div style="position: fixed; bottom: 0px; width: 100%;" hidden>
+			<div class="sorting-open-toggle">
+				<p>sort</p>
+			</div>
+			<div class="sorting-menu-bar">
+				<p>sorting system</p>
+			</div>
+		</div>
+        <div style="height: 30px;"></div>
+        <button type="button" class="content-item" onClick="ep01()">
+			<p class="playlist-item-title">Arknights EP - [Across the wind]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:16</div>
+			</div>
+		</button>
+        <button type="button" class="content-item" onClick="ep02()">
+			<p class="playlist-item-title">Arknights EP - [Y1K]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:07</div>
+			</div>
+		</button>
+        <button type="button" class="content-item" onClick="ep03()">
+			<p class="playlist-item-title">Arknights EP - [Towards Her Light]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:25</div>
+			</div>
+		</button>
+    </div>
+</body>
+</html>

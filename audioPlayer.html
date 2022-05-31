@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+	<meta name="Keywords" content="arknights, video, playlist, music, sort">
+	<title>Arknights - music player [test]</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+	<link href="css/arknightsAudiosPost.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--the top navigation-->
+	<nav>
+		<ul>
+			<div class="menu-header">
+				<p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+				<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+			</div>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Media</a>
+				<ul>
+					<li><a href="videoPlayer.html">Videos</a></li>
+					<li><a href="#">Musics</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Quanta</a>
+				<ul>
+					<li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
+				</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="setting.html">Setting</a></li>
+		</ul>
+	</nav>
+
+	<div class="dark-shade-cover"></div>
+
+	<div class="top-bar">
+		<p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+		<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+	</div>
+	<!--the end of top navigation-->
+
+	<div id="void"></div>
+
+	<div class="main">
+		<div class="container">
+			<div class="cover-pic">
+			</div>
+
+			<div>
+				<button type="button" id="play" onclick="play()">play</button>
+				<button type="button" id="pause" onclick="pause()" hidden>pause</button>
+				<button type="button" id="loop" value="0" onclick="loop()">loop</button>
+				<button type="button" id="mute" value="0" onclick="mute()">mute</button>
+			</div>
+
+			<div class="player-detail">
+				<label>volume</label>
+				<input type="range" id="vol-slider" value="100" oninput="onChan()">
+
+				<p>current volume: <span id="in-txt">100</span></p>
+
+				<div style="height: 25px; background-color: grey;"></div>
+
+				<audio id="player" src="aud/m_avg_amiya_evolution.mp3" type="audio/mp3"
+					ontimeupdate="currentDuration(this)"></audio>
+
+				<label>duration</label>
+				<input type="range" id="dur-slider" value="0" max="243.768" onchange="durChan()">
+
+				<p>max duration: <span id="mDur">0</span></p>
+				<p>current duration: <span id="cDur">0</span></p>
+				<p>new duration: <span id="newDur">none</span></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/globalJS.js"></script>
+	<script src="js/musicPlayer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+/*CSS Document*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(42, 42, 42);
+}
+#void{
+    height: 50px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#main-center-content{
+    position: fixed;
+    width: 100%;
+}
+#main-content{
+    position: relative;
+}
+#navigation-system{
+    position: fixed;
+}
+.top-bar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 5px solid rgb(160, 0, 0);
+    border-radius: 0px 0px 50px 0px;
+}
+.cover-for-nav-open{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+.menu-header{
+    height: 50px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid rgb(160, 0, 0);
+}
+.top-bar-item{
+    float: left;
+    color: white;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+.top-bar div{
+    display: inline-block;
+    height: 50px;
+}
+nav{
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    transition-duration: 0.2s;
+}
+.top-bar :nth-child(1){
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0px 20px;
+}
+.menu-header :nth-child(1){
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0px 20px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: black;
+}
+ul ul{
+    display: none;
+    border-left: 5px solid rgb(160, 0, 0);
+}
+.dark{
+	background: rgb(20, 20, 20);
+}
+.light{
+	background: white;
+}
+.light legend{
+    color: black;
+}
+.light label{
+    color: black;
+}
+.top-logo{
+    text-align: center;
+    width: 100%;
+}
+#mobile-logo{
+    display: none;
+}
+fieldset{
+    width: 500px;
+    padding: 20px;
+    margin: auto auto 30px auto;
+    border: 3px solid grey;
+    border-radius: 0 50px;
+}
+legend{
+    color: white;
+    font-size: 30px;
+    padding: 0px 5px;
+}
+p{
+    color: white;
+}
+.sub-nav{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px;
+    height: 24px;
+    margin-bottom: 15px;
+    border: 3px solid rgb(160, 0, 0);
+    border-radius: 25px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,1,0.00),black);
+    transition-duration: 0.3s;
+}
+.link-to-about{
+    color: white;
+    padding: 5px;
+    background-color: black;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@media (max-width:720px) {
+    #desktop-logo{
+        display: none;
+    }
+    #mobile-logo{
+        display: block;
+    }
+    fieldset{
+        width: auto;
+    }
+}

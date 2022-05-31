@@ -1,53 +1,105 @@
-<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
-	<meta name="Keywords" content="arknights, video, playlist, music, sort">
-	<title>Quanta: Arknights</title>
-	<link rel="icon" type="image/png" href="iframeChildrens/img/favicon.png">
-    <link rel="stylesheet" href="iframeChildrens/css/globalStyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+    <meta name="Keywords" content="arknights, video, playlist, music, sort">
+    <title>Arknights - terminal</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/globalStyle.css" type="text/css">
 </head>
+
 <body>
-    <!--the top navigation-->
-    <nav id="nav">
-        <ul>
-            <div class="menu-header">
-                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-                <img class="top-bar-item" src="iframeChildrens/img/arknightsLogo.png" alt="arknights">
-            </div>
-            <li><a href="index.html" onclick="clsNav()">Home</a></li>
-            <li><a>Videos &#9662;</a>
-                <ul>
-                    <li><a href="videoPlayer.html" onclick="clsNav()">PVs</a></li>
-                    <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
-                </ul>
-            </li>
-            <li id="nav-music"><a>Musics &#9662;</a>
-                <ul>
-                    <li><a href="#">wut?</a></li>
-                </ul>
-            </li>
-            <li><a>Quanta &#9662;</a>
-                <ul>
-                    <li><a href="https://markazmaxima.github.io/quanta/" target="_blank" onclick="clsNav()">Terminal</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html" onclick="clsNav()">About</a></li>
-            <li><a href="iframeChildrens/setting.html" target="iframe-holder" onclick="clsNav()">Setting</a></li>
-        </ul>
-    </nav>
-    <!--the end of top navigation-->
+    <div id="main-center-content">
+        <div style="height: 75px;"></div>
 
-	<iframe id="iframe-index" src="iframeChildrens/home.html" name="iframe-holder" frameborder="0"></iframe>
+        <div id="main-content">
+            <fieldset id="videos">
+                <legend>Videos</legend>
+                <a href="#" target="_top">
+                    <div class="sub-nav">Promotion Videos (PVs)</div>
+                </a>
+                <a href="/themeEP.html" target="_top">
+                    <div class="sub-nav">Extended Plays (EPs)</div>
+                </a>
+            </fieldset>
 
-    <script src="iframeChildrens/js/jquery-3.6.0.min.js"></script>
-    <script src="iframeChildrens/js/globalJS.js"></script>
-    <script>
-        function clsNav() {
-            document.getElementById("nav").style.left = '-300px';
-        }
-    </script>
+            <fieldset id="musics">
+                <legend>Musics</legend>
+                <a href="#">
+                    <div class="sub-nav">Themes (not yet...)</div>
+                </a>
+            </fieldset>
+
+            <fieldset id="the-experiment" hidden>
+                <legend>Experiment</legend>
+                <p>this is an experimental section. any features and pages is unfinished and may mess up your browsing
+                    experience, proceed with caution.</p>
+                <br>
+                <a href="audioPlayer.html" target="_blank">
+                    <div class="sub-nav">Music Player</div>
+                </a>
+                <a href="operatorsTheme.html" target="_blank">
+                    <div class="sub-nav">New Video Player</div>
+                </a>
+            </fieldset>
+
+            <fieldset id="news">
+                <legend>Site News</legend>
+                <p>this site is still in development. what you see here maybe subject to change in future.</p>
+                <p>please clear any data from this site when a new version has been push.</p>
+                <br>
+                <p>read more about [Arknights v0.4.1 (28 March 2022)] site in:</p>
+                </br>
+                <a href="../about.html" target="_top" id="new-player" class="link-to-about"
+                    style="cursor: pointer; border-radius: 10px;">about page</a>
+            </fieldset>
+        </div>
+    </div>
+
+    <div id="navigation-system">
+        <div class="top-bar">
+            <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+            <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+        </div>
+
+        <div class="cover-for-nav-open"></div>
+
+        <nav id="nav">
+            <ul>
+                <div class="menu-header">
+                    <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                    <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+                </div>
+                <li><a href="index.html" onclick="clsNav()">Home</a></li>
+                <li><a>Videos &#9662;</a>
+                    <ul>
+                        <li><a href="videoPlayer.html" onclick="clsNav()">PVs</a></li>
+                        <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
+                    </ul>
+                </li>
+                <li id="nav-music"><a>Musics &#9662;</a>
+                    <ul>
+                        <li><a href="#">wut?</a></li>
+                    </ul>
+                </li>
+                <li><a>Quanta &#9662;</a>
+                    <ul>
+                        <li><a href="https://markazmaxima.github.io/quanta/" target="_blank"
+                                onclick="clsNav()">Terminal</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" onclick="clsNav()">About</a></li>
+                <li><a href="setting.html" target="_blank" onclick="clsNav()">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/globalJS.js"></script>
+    <script src="js/indexJS.js"></script>
 </body>
+
 </html>

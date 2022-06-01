@@ -9,6 +9,7 @@
     <title>Arknights - terminal</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/globalStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 
 <body>
@@ -16,25 +17,54 @@
         <div style="height: 75px;"></div>
 
         <div id="main-content">
-            <fieldset id="videos">
-                <legend>Videos</legend>
-                <a href="#" target="_top">
-                    <div class="sub-nav">Promotion Videos (PVs)</div>
-                </a>
-                <a href="/themeEP.html" target="_top">
-                    <div class="sub-nav">Extended Plays (EPs)</div>
-                </a>
-            </fieldset>
-
-            <fieldset id="musics">
-                <legend>Musics</legend>
-                <a href="#">
-                    <div class="sub-nav">Themes (not yet...)</div>
-                </a>
-            </fieldset>
+            <div id="content-first-row">
+                <fieldset id="videos">
+                    <legend>Videos [wip]</legend>
+                    <a href="#" target="_top">
+                        <div class="sub-nav">Concept Trailers</div>
+                    </a>
+                    <a href="#" target="_top">
+                        <div class="sub-nav">Promotion Videos</div>
+                    </a>
+                    <a href="#" target="_top">
+                        <div class="sub-nav">Animation Promotion Videos</div>
+                    </a>
+                    <a href="#" target="_top">
+                        <div class="sub-nav">Original Animation Videos</div>
+                    </a>
+                    <a href="#" target="_top">
+                        <div class="sub-nav">Promotion Videos (PVs) [unaccesable]</div>
+                    </a>
+                    <a href="/themeEP.html" target="_top">
+                        <div class="sub-nav">Extended Plays (EPs)</div>
+                    </a>
+                </fieldset>
+    
+                <fieldset id="musics">
+                    <legend>Musics [wip]</legend>
+                    <a href="#">
+                        <div class="sub-nav">Original Soundtrack Collection (OSTs)</div>
+                    </a>
+                    <a href="#">
+                        <div class="sub-nav">Extended Play (EPs)</div>
+                    </a>
+                    <a href="#">
+                        <div class="sub-nav">Contingency Contract Collection</div>
+                    </a>
+                    <a href="#">
+                        <div class="sub-nav">Events Soundtrack Collection</div>
+                    </a>
+                    <a href="#">
+                        <div class="sub-nav">Collaboration Musics</div>
+                    </a>
+                    <a href="#">
+                        <div class="sub-nav">Featured Musics</div>
+                    </a>
+                </fieldset>
+            </div>
 
             <fieldset id="the-experiment" hidden>
-                <legend>Experiment</legend>
+                <legend>Experimental Section</legend>
                 <p>this is an experimental section. any features and pages is unfinished and may mess up your browsing
                     experience, proceed with caution.</p>
                 <br>
@@ -51,9 +81,9 @@
                 <p>this site is still in development. what you see here maybe subject to change in future.</p>
                 <p>please clear any data from this site when a new version has been push.</p>
                 <br>
-                <p>read more about [Arknights v0.4.1 (28 March 2022)] site in:</p>
+                <p>read more about [Arknights v0.5.1 (1 June 2022)] site in:</p>
                 </br>
-                <a href="../about.html" target="_top" id="new-player" class="link-to-about"
+                <a href="about.html" target="_top" id="new-player" class="link-to-about"
                     style="cursor: pointer; border-radius: 10px;">about page</a>
             </fieldset>
         </div>
@@ -76,7 +106,7 @@
                 <li><a href="index.html" onclick="clsNav()">Home</a></li>
                 <li><a>Videos &#9662;</a>
                     <ul>
-                        <li><a href="videoPlayer.html" onclick="clsNav()">PVs</a></li>
+                        <li><a href="#" onclick="clsNav()">PVs</a></li>
                         <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
                     </ul>
                 </li>

@@ -5,6 +5,7 @@
 }
 body {
   background-color: rgb(42, 42, 42);
+  height: 100%;
 }
 #void {
   height: 50px;

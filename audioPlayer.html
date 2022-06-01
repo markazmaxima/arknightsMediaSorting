@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
+	<meta name="description"
+		content="Welcome to Arknights Terminal, a Quanta sub terminal to link, sort and store various Arknights media like trailer, pv, animation, music, etc.">
 	<meta name="Keywords" content="arknights, video, playlist, music, sort">
 	<title>Arknights - music player [test]</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -13,41 +14,9 @@
 </head>
 
 <body>
-	<!--the top navigation-->
-	<nav>
-		<ul>
-			<div class="menu-header">
-				<p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-				<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-			</div>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Media</a>
-				<ul>
-					<li><a href="videoPlayer.html">Videos</a></li>
-					<li><a href="#">Musics</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Quanta</a>
-				<ul>
-					<li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
-				</ul>
-			</li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="setting.html">Setting</a></li>
-		</ul>
-	</nav>
+	<div id="main-center-content">
+		<div style="height: 75px;"></div>
 
-	<div class="dark-shade-cover"></div>
-
-	<div class="top-bar">
-		<p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
-		<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-	</div>
-	<!--the end of top navigation-->
-
-	<div id="void"></div>
-
-	<div class="main">
 		<div class="container">
 			<div class="cover-pic">
 			</div>
@@ -78,6 +47,44 @@
 				<p>new duration: <span id="newDur">none</span></p>
 			</div>
 		</div>
+	</div>
+
+	<div id="navigation-system">
+		<div class="top-bar">
+			<p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+			<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+		</div>
+
+		<div class="cover-for-nav-open"></div>
+
+		<nav id="nav">
+			<ul>
+				<div class="menu-header">
+					<p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+					<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+				</div>
+				<li><a href="index.html" onclick="clsNav()">Home</a></li>
+				<li><a>Videos [wip] &#9662;</a>
+					<ul>
+						<li><a href="#" onclick="clsNav()">PVs [wip]</a></li>
+						<li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
+					</ul>
+				</li>
+				<li><a>Musics [wip] &#9662;</a>
+					<ul>
+						<li><a href="#">--wip--</a></li>
+					</ul>
+				</li>
+				<li><a>Quanta &#9662;</a>
+					<ul>
+						<li><a href="https://markazmaxima.github.io/quanta/" target="_blank"
+								onclick="clsNav()">Terminal</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" onclick="clsNav()">About</a></li>
+				<li><a href="setting.html" target="_blank" onclick="clsNav()">Setting</a></li>
+			</ul>
+		</nav>
 	</div>
 
 	<script src="js/jquery-3.6.0.min.js"></script>

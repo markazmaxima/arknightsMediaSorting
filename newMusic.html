@@ -12,45 +12,55 @@
 	<link rel="stylesheet" href="css/newMusic.css" type="text/css">
 </head>
 
-<body class="dark">
-	<!--the top navigation-->
-	<nav>
-		<ul>
-			<div class="menu-header">
-				<p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-				<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
-			</div>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Media</a>
-				<ul>
-					<li><a href="videoPlayer.html">Videos</a></li>
-					<li><a href="#">Musics</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Quanta</a>
-				<ul>
-					<li><a href="https://markazmaxima.github.io/quanta/">Terminal</a></li>
-				</ul>
-			</li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="setting.html">Setting</a></li>
-		</ul>
-	</nav>
+<body>
+	<div id="main-center-content">
+		<div style="height: 75px;"></div>
 
-	<div class="dark-shade-cover"></div>
+		<p>flex box experimental</p>
 
-	<div class="top-bar">
-		<p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
-		<img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+		<div class="main-container">
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</div>
 	</div>
-	<!--the end of top navigation-->
 
-	<p>flex box experimental</p>
+	<div id="navigation-system">
+        <div class="top-bar">
+            <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+            <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+        </div>
 
-	<div class="main-container">
-		<div class="box1"></div>
-		<div class="box2"></div>
-	</div>
+        <div class="cover-for-nav-open"></div>
+
+        <nav id="nav">
+            <ul>
+                <div class="menu-header">
+                    <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                    <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+                </div>
+                <li><a href="index.html" onclick="clsNav()">Home</a></li>
+                <li><a>Videos [wip] &#9662;</a>
+                    <ul>
+                        <li><a href="#" onclick="clsNav()">PVs [wip]</a></li>
+                        <li><a href="themeEP.html" onclick="clsNav()">EPs</a></li>
+                    </ul>
+                </li>
+                <li><a>Musics [wip] &#9662;</a>
+                    <ul>
+                        <li><a href="#">--wip--</a></li>
+                    </ul>
+                </li>
+                <li><a>Quanta &#9662;</a>
+                    <ul>
+                        <li><a href="https://markazmaxima.github.io/quanta/" target="_blank"
+                                onclick="clsNav()">Terminal</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" onclick="clsNav()">About</a></li>
+                <li><a href="setting.html" target="_blank" onclick="clsNav()">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/globalJS.js"></script>

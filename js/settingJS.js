@@ -46,15 +46,4 @@ $(document).ready(function(){
         localStorage.setItem("experiment", "false");
         location.reload();
     });
-    $("#reset").hover(function(){
-        $(this).css("background-color", "rgb(189, 0, 0)");
-    }, function(){
-        $(this).css("background-color", "#740000");
-    });
-
-    $("#setting-done").hover(function(){
-        $(this).css("background-color", "rgb(189, 0, 0)");
-    }, function(){
-        $(this).css("background-color", "#740000");
-    });
 });

@@ -1,7 +1,12 @@
 /* CSS Document */
 .about-link{
-	text-decoration: none;
-	color: aqua;
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+.light .about-link{
+	border: 1px solid black;
 }
 p{
 	font-size: 18px;

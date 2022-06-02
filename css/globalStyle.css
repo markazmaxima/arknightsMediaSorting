@@ -10,9 +10,25 @@ body {
 #void {
   height: 50px;
 }
+.dark {
+  background: rgb(20, 20, 20);
+}
+.light {
+  background: white;
+}
 a {
   text-decoration: none;
   cursor: pointer;
+  transition-duration: 0.1s;
+}
+a:hover {
+  background-color: rgb(77, 77, 77);
+}
+.light a {
+  background-color: grey;
+}
+.light a:hover {
+  background-color: #555;
 }
 #main-center-content {
   position: absolute;
@@ -31,6 +47,9 @@ a {
   background-color: black;
   border-bottom: 5px solid rgb(160, 0, 0);
   border-radius: 0px 0px 50px 0px;
+}
+.light .top-bar {
+  background-color: grey;
 }
 .cover-for-nav-open {
   display: none;
@@ -51,6 +70,11 @@ a {
   height: 50px;
   background-color: black;
   cursor: pointer;
+  margin: 0px;
+}
+.light .top-bar-item {
+  color: white;
+  background-color: grey;
 }
 .top-bar div {
   display: inline-block;
@@ -63,6 +87,9 @@ nav {
   height: 100%;
   background-color: black;
   transition-duration: 0.2s;
+}
+.light nav {
+  background-color: grey;
 }
 .top-bar :nth-child(1) {
   font-size: 24px;
@@ -82,20 +109,24 @@ nav a {
   padding: 10px 20px;
   background-color: black;
 }
+.light ul ul {
+  background-color: grey;
+}
 ul ul {
   display: none;
   border-left: 5px solid rgb(160, 0, 0);
-}
-.dark {
-  background: rgb(20, 20, 20);
-}
-.light {
-  background: white;
 }
 .light legend {
   color: black;
 }
 .light label {
+  color: black;
+}
+p {
+  color: white;
+  font-size: 20;
+}
+.light p {
   color: black;
 }
 .top-logo {
@@ -117,22 +148,6 @@ legend {
   color: white;
   font-size: 30px;
   padding: 0px 5px;
-}
-p {
-  color: white;
-}
-.sub-nav {
-  color: white;
-  font-size: 24px;
-  text-align: center;
-  padding: 5px 0px;
-  height: 24px;
-  margin-bottom: 15px;
-  border: 3px solid rgb(160, 0, 0);
-  border-radius: 25px;
-  background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 1, 0), black);
-  transition-duration: 0.3s;
 }
 .link-to-about {
   color: white;

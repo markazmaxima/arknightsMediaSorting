@@ -34,12 +34,12 @@
     height: 150px;
     top: 78%;
     border-radius: 25px;
-    background-color: rgb(63, 63, 63);
+    background-color: grey;
 }
 .player-tags{
     display: inline-block;
     color: white;
-    margin: 5px 0px 0px 15px;
+    margin: 10px 0px 0px 15px;
 }
 .playlist-switching-bar{
     position: absolute;
@@ -48,17 +48,15 @@
     top: 78%;
     background-color: grey;
 }
-p{
-    float: left;
-    margin-right: 5px;
-}
 #video-tag{
-    color: rgb(182, 182, 182);
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
 }
 #player-title{
-    color: white;
+    color: black;
     font-size: 24px;
-    margin: 5px 15px 0px 15px;
+    margin: 15px 15px 0px 15px;
 }
 .playlist{
     position: absolute;

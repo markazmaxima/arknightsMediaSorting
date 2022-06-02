@@ -10,7 +10,7 @@
 	<title>Arknights - setting</title>
 	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<link rel="stylesheet" href="css/globalStyle.css" type="text/css">
-	<link href="css/settingStyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/settingStyle.css" type="text/css">
 </head>
 
 <body>
@@ -27,6 +27,8 @@
 				<label for="myToggle" class="toggle-setting-label">Dark Mode</label>
 			</fieldset>
 
+			<div style="height: 25px;"></div>
+
 			<fieldset>
 				<legend>Experimental</legend>
 				<label class="toggle" for="toggle-experiment">
@@ -36,10 +38,12 @@
 				<label for="myToggle" class="toggle-setting-label">Experimental</label>
 			</fieldset>
 
+			<div style="height: 75px;"></div>
+
 			<fieldset>
 				<legend>Reset Setting</legend>
-				<button type="button" id="reset" class="setting-btn">reset setting</button>
-				<a href="index.html" id="setting-done" class="setting-btn">Apply Change</a>
+				<a type="button" id="reset" class="setting-btn">reset setting</a>
+				<a href="index.html" id="setting-done" class="setting-btn">apply change</a>
 			</fieldset>
 		</div>
 	</div>
@@ -47,7 +51,7 @@
 	<div id="navigation-system">
         <div class="top-bar">
             <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
-            <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+            <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights" onclick="location.href='index.html'">
         </div>
 
         <div class="cover-for-nav-open"></div>
@@ -56,7 +60,7 @@
             <ul>
                 <div class="menu-header">
                     <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
-                    <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights">
+                    <img class="top-bar-item" src="img/arknightsLogo.png" alt="arknights" onclick="location.href='index.html'">
                 </div>
                 <li><a href="index.html" onclick="clsNav()">Home</a></li>
                 <li><a>Videos [wip] &#9662;</a>

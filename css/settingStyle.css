@@ -46,12 +46,27 @@ a {
   color: white;
 }
 .setting-btn {
+  color: black;
   text-decoration: none;
   font-size: 20px;
   padding: 5px;
-  background: #740000;
+  background: grey;
   border: none;
   margin-right: 10px;
   cursor: pointer;
-  border-radius: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.setting-btn:hover {
+  color: grey;
+  background-color: black;
+}
+.light .setting-btn {
+  color: white;
+  background: black;
+}
+.light .setting-btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }

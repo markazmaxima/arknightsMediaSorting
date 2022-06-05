@@ -22,12 +22,8 @@ $(document).ready(function(){
     $("#toggle-darkmode").click(function(){
         var tknDark = localStorage.getItem("siteTheme");
         if(tknDark=="dark"){
-            $("body").removeClass("dark");
-            $("body").addClass("light");
             localStorage.setItem("siteTheme", "light");
         } else if(tknDark=="light"){
-            $("body").removeClass("light");
-            $("body").addClass("dark");
             localStorage.setItem("siteTheme", "dark");
         }
     });

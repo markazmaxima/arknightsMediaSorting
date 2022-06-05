@@ -1,12 +1,24 @@
 /* CSS Document */
 .about-link{
+	text-decoration: none;
 	color: white;
 	padding: 10px;
 	border: 1px solid white;
 	border-radius: 20px;
+	margin-right: 5px;
+	transition-duration: 0.1s;
 }
-.light .about-link{
+.about-link:hover {
+	color: black;
+	background-color: white;
+}
+.light .about-link {
+	color: black;
 	border: 1px solid black;
+}
+.light .about-link:hover {
+	color: white;
+	background-color: black;
 }
 p{
 	font-size: 18px;

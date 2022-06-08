@@ -61,6 +61,22 @@ button:hover{
 	background-color: white;
 	border-bottom: 1px black;
 }
+.content-item:hover {
+	color: white;
+}
+.content-item-cn {
+	background-color: grey;
+}
+.content-item-cn .playlist-item-title {
+	color: black;
+}
+.content-item-cn:hover {
+	color: white;
+	background-color: rgb(49, 49, 49);
+}
+.content-item-cn:hover .playlist-item-title {
+	color: white;
+}
 .content-detail{
     display: inline-block;
     font-size: 14px;

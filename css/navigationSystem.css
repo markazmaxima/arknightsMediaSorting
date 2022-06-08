@@ -11,11 +11,21 @@ a {
 a:hover {
   background-color: rgb(77, 77, 77);
 }
-.light a {
-  background-color: grey;
+nav {
+  position: fixed;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: black;
+  transition-duration: 0.2s;
 }
-.light a:hover {
-  background-color: #555;
+nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: black;
 }
 .top-bar {
   position: fixed;
@@ -25,8 +35,9 @@ a:hover {
   border-bottom: 5px solid rgb(160, 0, 0);
   border-radius: 0px 0px 50px 0px;
 }
-.light .top-bar {
-  background-color: grey;
+ul ul {
+  display: none;
+  border-left: 7px solid rgb(160, 0, 0);
 }
 .cover-for-nav-open {
   display: none;
@@ -41,6 +52,11 @@ a:hover {
   margin-bottom: 5px;
   border-bottom: 5px solid rgb(160, 0, 0);
 }
+.menu-header :nth-child(1) {
+  font-size: 24px;
+  line-height: 50px;
+  padding: 0px 20px;
+}
 .main-icon {
   background: url(../img/arknightsLogo.png) no-repeat 6px center;
 }
@@ -52,47 +68,32 @@ a:hover {
   cursor: pointer;
   margin: 0px;
 }
-.light .top-bar-item {
-  color: white;
-  background-color: grey;
-}
-.top-bar div {
-  display: inline-block;
-  height: 50px;
-}
-nav {
-  position: fixed;
-  left: -300px;
-  width: 300px;
-  height: 100%;
-  background-color: black;
-  transition-duration: 0.2s;
-}
-.light nav {
-  background-color: grey;
-}
 .top-bar :nth-child(1) {
   font-size: 24px;
   line-height: 50px;
   padding: 0px 20px;
 }
-.menu-header :nth-child(1) {
-  font-size: 24px;
-  line-height: 50px;
-  padding: 0px 20px;
+.top-bar div {
+  display: inline-block;
+  height: 50px;
 }
-nav a {
-  display: block;
-  text-decoration: none;
+.light a {
+  background-color: grey;
+}
+.light a:hover {
+  background-color: #555;
+}
+.light nav {
+  background-color: grey;
+}
+.light .top-bar {
+  background-color: grey;
+}
+.light .top-bar-item {
   color: white;
-  font-size: 24px;
-  padding: 10px 20px;
-  background-color: black;
+  background-color: grey;
 }
 .light ul ul {
   background-color: grey;
 }
-ul ul {
-  display: none;
-  border-left: 5px solid rgb(160, 0, 0);
-}
+

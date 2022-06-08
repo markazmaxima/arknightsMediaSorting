@@ -1,0 +1,189 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/videoPlayerDetailStyle.css" type="text/css" />
+</head>
+
+<body>
+	<script src="js/extendedJS02.js"></script>
+	<script>
+		function prv01() {
+			localStorage.setItem("ak-video-ep-token", "1");
+		}
+	</script>
+
+	<div>
+		<div style="position: fixed; width: 100%;">
+			<div class="playlist-sorter">
+				<a href="extendedBatch01.html" onclick="prv01()">
+					<button id="switch-to-01" class="switch-left">&lsaquo;</button>
+				</a>
+				<div class="switch-title">
+					<p>Second part</p>
+				</div>
+				<button id="switch-right" class="switch-right">&rsaquo;</button>
+			</div>
+		</div>
+		<div style="position: fixed; bottom: 0px; width: 100%;" hidden>
+			<div class="sorting-open-toggle">
+				<p>sort</p>
+			</div>
+			<div class="sorting-menu-bar">
+				<p>sorting system</p>
+			</div>
+		</div>
+		<div style="height: 30px;"></div>
+		<button type="button" class="content-item" onClick="ep01()">
+			<p class="playlist-item-title">Arknights EP - [Across the wind]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:16</div>
+			</div>
+		</button>
+		<button type="button" class="content-item" onClick="ep02()">
+			<p class="playlist-item-title">Arknights EP - [Y1K]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:07</div>
+			</div>
+		</button>
+		<button type="button" class="content-item" onClick="ep03()">
+			<p class="playlist-item-title">Arknights EP - [Towards Her Light]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:25</div>
+			</div>
+		</button>
+		<button type="button" class="content-item" onClick="ep04()">
+			<p class="playlist-item-title">Arknights EP - [Bridge to the Dawn]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:27</div>
+			</div>
+		</button>
+		<button type="button" class="content-item" onClick="ep05()">
+			<p class="playlist-item-title">Arknights EP - [Radiant]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:10</div>
+			</div>
+		</button>
+		<button type="button" class="content-item" onClick="ep06()">
+			<p class="playlist-item-title">Arknights EP - [Field in the Light]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:06</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep07()">
+			<p class="playlist-item-title">Arknights EP - [Melting White]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:46</div>
+				<div class="content-featuring">Magallan</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep08()">
+			<p class="playlist-item-title">Arknights EP - [Silver Lining]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:32</div>
+				<div class="content-featuring">Silverash</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep09()">
+			<p class="playlist-item-title">Arknights EP - [醉飞尘]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:20</div>
+				<div class="content-featuring">Ling</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep10()">
+			<p class="playlist-item-title">Arknights EP - [却阑珊]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:35</div>
+				<div class="content-featuring">Lee</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep11()">
+			<p class="playlist-item-title">Arknights EP - [随意随意呀]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:43</div>
+				<div class="content-featuring"></div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep12()">
+			<p class="playlist-item-title">Arknights EP - [Spark for Dream]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:16</div>
+				<div class="content-featuring">Goldenglow</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep13()">
+			<p class="playlist-item-title">Arknights EP - [Прощание]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:52</div>
+				<div class="content-featuring">Hellagur</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep14()">
+			<p class="playlist-item-title">Arknights EP - [Eternal Flame]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:02</div>
+				<div class="content-featuring">Fiametta</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep15()">
+			<p class="playlist-item-title">Arknights EP - [March On!]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:34</div>
+				<div class="content-featuring">Horn</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep16()">
+			<p class="playlist-item-title">Arknights EP - [A Great Adventure]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:15</div>
+				<div class="content-featuring">Myrtle & Durin</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep17()">
+			<p class="playlist-item-title">Arknights EP - [Awaken]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">4:25</div>
+				<div class="content-featuring">Specter the Unchained</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep18()">
+			<p class="playlist-item-title">Arknights EP - [Rapier]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:46</div>
+				<div class="content-featuring">Irene</div>
+			</div>
+		</button>
+		<button type="button" class="content-item-cn" onClick="ep19()">
+			<p class="playlist-item-title">Arknights EP - [Bluish Light]</p>
+			<div>
+				<div class="content-detail">EP</div>
+				<div class="content-duration">3:58</div>
+				<div class="content-featuring">Lumen</div>
+			</div>
+		</button>
+	</div>
+</body>
+
+</html>

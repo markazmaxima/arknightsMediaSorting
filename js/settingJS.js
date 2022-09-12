@@ -1,8 +1,8 @@
 // JavaScript Document
 $(document).ready(function(){
-    setThemeInputButton();
-    setExpInputButton();
-    function setThemeInputButton(){
+    setThmInptBtn();
+    setExpInptBtn();
+    function setThmInptBtn(){
         var thm = localStorage.getItem("siteTheme");
         if(thm=="dark"){
             $("#toggle-darkmode").prop("checked", true);
@@ -10,7 +10,7 @@ $(document).ready(function(){
             $("#toggle-darkmode").prop("checked", false);
         }
     };
-    function setExpInputButton(){
+    function setExpInptBtn(){
         var exp = localStorage.getItem("experiment");
         if(exp=="true"){
             $("#toggle-experiment").prop("checked", true);

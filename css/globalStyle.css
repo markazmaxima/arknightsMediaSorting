@@ -34,7 +34,7 @@ body {
 }
 p {
   color: white;
-  font-size: 20;
+  font-size: 14;
 }
 .light p {
   color: black;
@@ -47,7 +47,7 @@ p {
   display: none;
 }
 fieldset {
-  width: 500px;
+  width: 400px;
   height: 100%;
   padding: 20px;
   margin: auto;
@@ -56,7 +56,7 @@ fieldset {
 }
 legend {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   padding: 0px 5px;
 }
 .link-to-about {

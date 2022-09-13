@@ -1,83 +1,83 @@
-function event21(){
+function vid21(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/6dw9YjpaW7k?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "Vigilo";
 }
-function event22(){
+function vid22(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/IqtTtyHsLjM?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "Pinus Sylvestris";
 }
-function event23(){
+function vid23(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/lFmLz-ba4Q8?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "Near Light";
 }
-function event24(){
+function vid24(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/i7j9t6vokZw?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "Break the Ice";
 }
-function event25(){
+function vid25(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/eKY27D26Cp4?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "Invitation to Wine";
 }
-function event26(){
+function vid26(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/sTHe9Llyskk?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "A Light Spark in Darkness";
 }
-function event27(){
+function vid27(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event28(){
+function vid28(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event29(){
+function vid29(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
 
 /----------------------------------------------------/
 
-function event30(){
+function vid30(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event31(){
+function vid31(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event32(){
+function vid32(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event33(){
+function vid33(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event34(){
+function vid34(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event35(){
+function vid35(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event36(){
+function vid36(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event37(){
+function vid37(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event38(){
+function vid38(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event39(){
+function vid39(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }
-function event40(){
+function vid40(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
 	parent.document.getElementById("player-title").innerHTML = "";
 }

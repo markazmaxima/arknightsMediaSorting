@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/sys.navSys.css" type="text/css">
+</head>
+
+<div id="navigation-system">
+    <div class="top-bar">
+        <p id="open-sidebar-menu" class="top-bar-item">&#9776;</p>
+        <a style="padding: 0px;">
+            <img class="top-bar-item" src="img/akLg.png" alt="arknights" onclick="homeIcon()">
+        </a>
+    </div>
+
+    <div class="cover-for-nav-open"></div>
+
+    <nav id="nav">
+        <ul>
+            <div class="menu-header">
+                <p id="close-sidebar-menu" class="top-bar-item">&#9776;</p>
+                <a style="padding: 0px;">
+                    <img class="top-bar-item" src="img/akLg.png" alt="arknights" onclick="homeIcon()">
+                </a>
+                
+            </div>
+            <li><a href="index.html" target="_top">Home</a></li>
+            <li><a>Videos &#9662;</a>
+                <ul>
+                    <li><a href="vid.cncpt.html" target="_top">Concept Trailers</a></li>
+                    <li><a href="vid.main.html" target="_top">Main Story (PVs)</a></li>
+                    <li><a href="vid.evnt.html" target="_top">Event (PVs)</a></li>
+                    <li><a href="vid.extd.html" target="_top">Extended Play (EPs)</a></li>
+                    <li><a href="vid.cc.html" target="_top">Contingency Contract (PVs)</a></li>
+                </ul>
+            </li>
+            <li><a>Musics [hold] &#9662;</a>
+                <ul>
+                    <li><a href="#" target="_top">--wip--</a></li>
+                </ul>
+            </li>
+            <li><a>Quanta &#9662;</a>
+                <ul>
+                    <li><a href="https://markazmaxima.github.io/quanta/" target="_blank">Terminal</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="sys.about.html" target="_top">About</a></li>
+            <li><a href="sys.sett.html" target="_top">Setting</a></li>
+        </ul>
+    </nav>
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sys.navSys.js"></script>
+<script>
+    function homeIcon() {
+        parent.location.href = 'index.html';
+    }
+</script>

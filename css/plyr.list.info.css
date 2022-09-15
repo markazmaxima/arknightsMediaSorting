@@ -3,7 +3,6 @@
     margin: 0;
 }
 .playlist-sorter{
-	position: relative;
 	text-align: center;
 	color: white;
     background-color: grey;
@@ -11,7 +10,6 @@
 	height: 30px;
 }
 .switch-left{
-	display: inline-block;
 	float: left;
 	color: white;
 	width: 25px;
@@ -29,7 +27,6 @@
 	cursor: pointer;
 }
 .switch-right{
-	display: inline-block;
 	float: right;
 	color: white;
 	width: 25px;

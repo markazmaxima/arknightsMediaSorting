@@ -1,5 +1,5 @@
 "use strict";
-import master from '../json/test.json' assert {type: 'json'};
+import master from '../json/list.cncpt.01.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
@@ -9,15 +9,12 @@ $(document).ready(function () {
 
     function dupl() { //loop duplicate
         const myTime = setTimeout(() => {
-            let grabTitle = master[i].tit; //grab data
+            let grabTitle = master[i].title; //grab data
             let grabTblock = master.length;
             console.log(grabTitle);
             i++;
 
-            if (i == mxD) { //last dupl check
-                
-            }
-            else if (i < mxD) { //dupl function
+            if (i < mxD) { //dupl function
                 $("#btn-list-item").attr("onclick", "vid" + i + "()");
                 $("#btn-list-item").clone().appendTo("#btn-list"); //dupl based from first child
                 let getchildList = document.getElementById("btn-list").childNodes[i]; //get child of list
@@ -45,6 +42,6 @@ $(document).ready(function () {
             } else {
                 console.log("loop broken..."); //error output
             }
-        }, 500); //loop delayer
+        }, 100); //loop delayer
     };
 });

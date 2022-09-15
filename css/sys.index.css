@@ -33,7 +33,7 @@
 .light #link-to-about {
   border: 1px solid black;
 }
-#news {
+#news, #checkmark {
   text-align: left;
   margin-bottom: 50px;
 }

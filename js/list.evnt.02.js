@@ -23,8 +23,8 @@ function vid26(){
 	parent.document.getElementById("player-title").innerHTML = "A Light Spark in Darkness";
 }
 function vid27(){
-	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";
-	parent.document.getElementById("player-title").innerHTML = "";
+	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/AbDo2QSW460?autoplay=1";
+	parent.document.getElementById("player-title").innerHTML = "Guide Ahead";
 }
 function vid28(){
 	parent.document.getElementById("primary-video-wrapper").src = "https://www.youtube.com/embed/?autoplay=1";

@@ -19,16 +19,19 @@ $(document).ready(function () {
                 $("#btn-list-item:first-child").attr("onclick", "vid1()");
                 //pull data for first 3 duplicate
 
-                console.log("pull"+titl1);
-            };
-            if (i < mxD) { //dupl function
+                console.log("pull "+titl1);
+                //put data in first 3 btn
+            }
+            else if (i < mxD) { //dupl function
                 i++;
                 $("#btn-list-item").attr("onclick", "vid" + i + "()");
                 $("#btn-list-item").clone().appendTo("#btn-list");
 
                 dupl();
-            };
-        }, 200);
+            } else {
+                console.log("loop broken...");
+            }
+        }, 100);
     };
 
     let ppp = $("#btn-list-item");

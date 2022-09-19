@@ -11,7 +11,7 @@ $(document).ready(function () {
             let grabTitle = master[i].title; //grab data
             let grabURL = master[i].URL; //grab URL
             let grabTag = master[i].tag; //grab tag
-            let grabDur = master[i].duration; //grab duration
+            let grabDur = master[i+1].duration; //grab duration
             let grabTblock = master.length;
             console.log(grabURL);
             i++;
@@ -21,6 +21,8 @@ $(document).ready(function () {
                 let getchildList = document.getElementById("btn-list").childNodes[i]; //get child of list
                 $("#btn-list-item:last-child").attr("value", (i+1)); //set duplicated btn value
                 let getchildBtn = getchildList.childNodes[1]; //get child of button
+                let getchild2Btn = getchildList.childNodes[3];
+                let getchild3Btn = getchild2Btn.childNodes[1];
 
                 //set new btn id
                 var nT = i + 1;
@@ -30,6 +32,10 @@ $(document).ready(function () {
                 //set new title id
                 let nwitmID = "title-" + i;
                 getchildBtn.id = nwitmID;
+
+                //set new duration
+                let nwitmDur = grabDur;
+                getchild3Btn.innerHTML = nwitmDur;
 
                 //last duplicate error interf
                 if (i == grabTblock) {

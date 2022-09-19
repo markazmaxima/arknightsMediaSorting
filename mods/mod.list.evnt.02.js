@@ -13,14 +13,15 @@ $(document).ready(function () {
             let grabTag = master[i].tag; //grab tag
             let grabDur = master[i].duration; //grab duration
             let grabTblock = master.length;
-            console.log(grabURL);
             i++;
 
-            if (i < grabTblock+1) { //dupl function
+            if (i < grabTblock) { //dupl function
                 $("#btn-list-item").clone().appendTo("#btn-list"); //dupl based from first child
                 let getchildList = document.getElementById("btn-list").childNodes[i]; //get child of list
                 $("#btn-list-item:last-child").attr("value", (i+1)); //set duplicated btn value
                 let getchildBtn = getchildList.childNodes[1]; //get child of button
+                let getchild2Btn = getchildList.childNodes[3];
+                let getchild3Btn = getchild2Btn.childNodes[1];
 
                 //set new btn id
                 var nT = i + 1;
@@ -30,6 +31,10 @@ $(document).ready(function () {
                 //set new title id
                 let nwitmID = "title-" + i;
                 getchildBtn.id = nwitmID;
+
+                //set new duration
+                let nwitmDur = grabDur;
+                getchild3Btn.innerHTML = nwitmDur;
 
                 //last duplicate error interf
                 if (i == grabTblock) {

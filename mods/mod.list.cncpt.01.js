@@ -1,9 +1,8 @@
 "use strict";
-import master from '../json/list.main.01.json' assert {type: 'json'};
+import master from '../json/list.cncpt.01.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
-    var mxD = 20; //change here for duplication amount !!!
 
     dupl();
 
@@ -11,15 +10,13 @@ $(document).ready(function () {
         const myTime = setTimeout(() => {
             let grabTitle = master[i].title; //grab data
             let grabURL = master[i].URL; //grab URL
+            let grabTag = master[i].tag; //grab tag
+            let grabDur = master[i].duration; //grab duration
             let grabTblock = master.length;
             console.log(grabURL);
             i++;
 
-            if ((i + 1) == mxD) { //last dupl check
-                $("#btn-list-item:first-child").attr("value", "1");
-                
-            }
-            else if (i < mxD) { //dupl function
+            if (i < grabTblock+1) { //dupl function
                 $("#btn-list-item").clone().appendTo("#btn-list"); //dupl based from first child
                 let getchildList = document.getElementById("btn-list").childNodes[i]; //get child of list
                 $("#btn-list-item:last-child").attr("value", (i+1)); //set duplicated btn value
@@ -34,11 +31,10 @@ $(document).ready(function () {
                 let nwitmID = "title-" + i;
                 getchildBtn.id = nwitmID;
 
+                //last duplicate error interf
                 if (i == grabTblock) {
                     const remC = document.getElementById("btn-list");
                     remC.removeChild(remC.lastElementChild);
-
-                    $("#btn-list-item:first-child").attr("onclick", "parent.document.getElementById('primary-video-wrapper').src = 'https://www.youtube.com/embed/Hfu_I0V3VrM?autoplay=1';");
                 };
 
                 //set new title by id
@@ -47,12 +43,12 @@ $(document).ready(function () {
 
                 //set onclick
                 const tempInt = document.getElementById("btn-list-item-" + (i));
-                $(tempInt).attr("onclick", "parent.document.getElementById('primary-video-wrapper').src = '"+grabURL+"';");
+                $(tempInt).attr("onclick", "parent.document.getElementById('primary-video-wrapper').src = '"+grabURL+"';parent.document.getElementById('player-title').innerHTML='"+grabTitle+"'");
 
                 dupl(); //loop
             } else {
                 console.log("loop broken..."); //error output
             }
-        }, 200); //loop delayer
+        }, 0); //loop delayer
     };
 });

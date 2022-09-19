@@ -2,106 +2,47 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/plyr.list.info.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/plyr.list.info.css" type="text/css" />
 </head>
 
 <body>
-    <script src="../js/list.cc.01.js"></script>
-	<script>
-		// function
-	</script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../mods/mod.list.cc.01.js" type="module"></script>
 
-	<div>
-		<div style="position: fixed; width: 100%;">
-			<div class="playlist-sorter">
-				<a href="">
-					<button id="switch-left" class="switch-left">&lsaquo;</button>
-				</a>
-				<div class="switch-title">
-					<p>First part</p>
-				</div>
-				<a>
-					<button id="switch-to-02" class="switch-right">&rsaquo;</button>
-				</a>
-			</div>
-		</div>
-		<div style="position: fixed; bottom: 0px; width: 100%;" hidden>
-			<div class="sorting-open-toggle">
-				<p>sort</p>
-			</div>
-			<div class="sorting-menu-bar">
-				<p>sorting system</p>
-			</div>
-		</div>
-		<div style="height: 30px;"></div>
-		<button type="button" class="content-item" onClick="vid01()">
-			<p class="playlist-item-title">#0 Operation Barrenland</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid02()">
-			<p class="playlist-item-title">#1 Operation Pyrite</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid03()">
-			<p class="playlist-item-title">#2 Operation Blade</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid04()">
-			<p class="playlist-item-title">#3 Operation Cinder</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid05()">
-			<p class="playlist-item-title">#4 Operation Lead Seal</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid06()">
-			<p class="playlist-item-title">#5 Operation Spectrum</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid07()">
-			<p class="playlist-item-title">#6 Operation Wild Scales</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid08()">
-			<p class="playlist-item-title">#7 Operation Pine Soot</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid09()">
-			<p class="playlist-item-title">#8 Operation Dawnseeker</p>
-			<div>
-				<div class="content-detail">cc</div>
-				<div class="content-duration"></div>
-			</div>
-		</button>
-	</div>
+    <div>
+        <div style="position: fixed; width: 100%;">
+            <div class="playlist-sorter">
+                <a href="">
+                    <button id="swtch-prv" class="switch-left">&lsaquo;</button>
+                </a>
+                <div class="switch-title">
+                    <p>First</p>
+                </div>
+                <a>
+                    <button id="swtch-nxt" class="switch-right">&rsaquo;</button>
+                </a>
+            </div>
+        </div>
+        <div style="position: fixed; bottom: 0px; width: 100%;" hidden>
+            <div class="sorting-open-toggle">
+                <p>sort</p>
+            </div>
+            <div class="sorting-menu-bar">
+                <p>sorting system</p>
+            </div>
+        </div>
+        <div style="height: 30px;"></div>
+        <div id="btn-list"><button id="btn-list-item" value="1" type="button" class="content-item" onclick="parent.document.getElementById('primary-video-wrapper').src = 'https://www.youtube.com/embed/4_OKl-UX6PM?autoplay=1';parent.document.getElementById('player-title').innerHTML='Season #0 Operation Barrenland'">
+                <p id="title-0"></p>
+                <div>
+                    <div class="content-duration">0:00</div>
+                </div>
+            </button></div>
+    </div>
 </body>
 
 </html>

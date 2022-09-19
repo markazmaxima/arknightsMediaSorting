@@ -2,313 +2,47 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/plyr.list.info.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/plyr.list.info.css" type="text/css" />
 </head>
 
 <body>
-	<script src="../js/list.extd.01.js"></script>
-	<script>
-		function nxt02() {
-			localStorage.setItem("ak-vid-extd-tkn", "2");
-		}
-	</script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../mods/mod.list.extd.01.js" type="module"></script>
 
-	<div>
-		<div style="position: fixed; width: 100%;">
-			<div class="playlist-sorter">
-				<button id="switch-left" class="switch-left">&lsaquo;</button>
-				<div class="switch-title">
-					<p>First part</p>
-				</div>
-				<a href="list.extd.02.html" onclick="nxt02()">
-					<button id="switch-to-02" class="switch-right">&rsaquo;</button>
-				</a>
-			</div>
-		</div>
-		<div style="position: fixed; bottom: 0px; width: 100%;" hidden>
-			<div class="sorting-open-toggle">
-				<p>sort</p>
-			</div>
-			<div class="sorting-menu-bar">
-				<p>sorting system</p>
-			</div>
-		</div>
-		<div style="height: 30px;"></div>
-		<button type="button" class="content-item" onClick="vid01()">
-			<p class="playlist-item-title">Code of Brawl [Speed of Light]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:00</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid02()">
-			<p class="playlist-item-title">Arknights EP - [Boiling Blood]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:37</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid03()">
-			<p class="playlist-item-title">Arknights EP - [Timeless]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:12</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid04()">
-			<p class="playlist-item-title">Arknights EP - [Solitary Journey]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:25</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid05()">
-			<p class="playlist-item-title">Arknights EP - [Hometown Wind]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:16</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid06()">
-			<p class="playlist-item-title">
-				Arknights EP - [Gazing From Great Heights]
-			</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:12</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid07()">
-			<p class="playlist-item-title">Arknights EP - [Lily of the Valley]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">6:41</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid08()">
-			<p class="playlist-item-title">Arknights EP - [Zone 10⁻⁸]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:04</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid09()">
-			<p class="playlist-item-title">Arknights EP - [Curtain Call]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:18</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid10()">
-			<p class="playlist-item-title">Arknights EP - [Renegade]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:58</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid11()">
-			<p class="playlist-item-title">Arknights EP - [Requiem]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:21</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid12()">
-			<p class="playlist-item-title">Arknights EP - [Sparkling Hydraulics]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:50</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid13()">
-			<p class="playlist-item-title">Arknights EP - [El Brillo Solitario]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:07</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid14()">
-			<p class="playlist-item-title">
-				Arknights EP - [Evolutionary Mechanization]
-			</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:22</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid15()">
-			<p class="playlist-item-title">Arknights EP - [ALIVE]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:12</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid16()">
-			<p class="playlist-item-title">Arknights EP - [Spring's Pulse]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:20</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid17()">
-			<p class="playlist-item-title">Arknights EP - [Reconnection]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:29</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid18()">
-			<p class="playlist-item-title">Arknights EP - [Stay Gold]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:08</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid19()">
-			<p class="playlist-item-title">Arknights EP - [Confront]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:18</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid20()">
-			<p class="playlist-item-title">Arknights EP - [Crystallize]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:38</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid21()">
-			<p class="playlist-item-title">Arknights EP - [Lullabye]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:35</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid22()">
-			<p class="playlist-item-title">Arknights EP - [Lithos]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:25</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid23()">
-			<p class="playlist-item-title">Arknights EP - [Tipsy]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:00</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid24()">
-			<p class="playlist-item-title">Arknights EP - [Till the Bell Tolls]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:17</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid25()">
-			<p class="playlist-item-title">Arknights EP - [Summer Wave]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:19</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid26()">
-			<p class="playlist-item-title">Arknights EP - [Till the Wave Ends]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:07</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid27()">
-			<p class="playlist-item-title">Arknights EP - [Neon-lit Bustle]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:16</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid28()">
-			<p class="playlist-item-title">Arknights EP - [Self-observation]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:14</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid29()">
-			<p class="playlist-item-title">Arknights EP - [Daydaydream]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:15</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid30()">
-			<p class="playlist-item-title">Arknights EP - [Autumn Moods]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">3:20</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid31()">
-			<p class="playlist-item-title">Arknights EP - [Gearing Up]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:21</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid32()">
-			<p class="playlist-item-title">Arknights EP - [Feels]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:00</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid33()">
-			<p class="playlist-item-title">Arknights EP - [Voices]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:09</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid34()">
-			<p class="playlist-item-title">Arknights EP - [Immutable]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:14</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid35()">
-			<p class="playlist-item-title">Arknights EP - [Real Me]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:33</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid36()">
-			<p class="playlist-item-title">Arknights EP - [Heart Forest]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:25</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid37()">
-			<p class="playlist-item-title">Arknights EP - [ManiFesto:]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">2:44</div>
-			</div>
-		</button>
-		<button type="button" class="content-item" onClick="vid38()">
-			<p class="playlist-item-title">Arknights EP - [Winter Absolution]</p>
-			<div>
-				<div class="content-detail">EP</div>
-				<div class="content-duration">4:11</div>
-			</div>
-		</button>
-	</div>
+    <div>
+        <div style="position: fixed; width: 100%;">
+            <div class="playlist-sorter">
+                <a>
+                    <button id="swtch-prv" class="switch-left">&lsaquo;</button>
+                </a>
+                <div class="switch-title">
+                    <p>First</p>
+                </div>
+                <a href="list.extd.02.html">
+                    <button id="swtch-nxt" class="switch-right">&rsaquo;</button>
+                </a>
+            </div>
+        </div>
+        <div style="position: fixed; bottom: 0px; width: 100%;" hidden>
+            <div class="sorting-open-toggle">
+                <p>sort</p>
+            </div>
+            <div class="sorting-menu-bar">
+                <p>sorting system</p>
+            </div>
+        </div>
+        <div style="height: 30px;"></div>
+        <div id="btn-list"><button id="btn-list-item" value="1" type="button" class="content-item" onclick="parent.document.getElementById('primary-video-wrapper').src = 'https://www.youtube.com/embed/6C5sfOOvWwA?autoplay=1';parent.document.getElementById('player-title').innerHTML='Code of Brawl [Speed of Light] DJ OKAWARI feat. Ai Ninomiya'">
+                <p id="title-0"></p>
+                <div>
+                    <div class="content-duration">0:00</div>
+                </div>
+            </button></div>
+    </div>
 </body>
 
 </html>

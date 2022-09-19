@@ -40,6 +40,11 @@ $(document).ready(function(){
     $("#reset").click(function(){
         localStorage.setItem("siteTheme", "dark");
         localStorage.setItem("experiment", "false");
+        alert("setting reset!");
         location.reload();
     });
+    $("#clearC").click(function(){
+        localStorage.clear();
+        alert("cache cleared!");
+    })
 });

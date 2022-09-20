@@ -1,21 +1,21 @@
 [
     {
         "title": "Concept Trailer 1",
-        "URL": "https://www.youtube.com/embed/uySJpmfM7q4?autoplay=1",
+        "URL": "uySJpmfM7q4",
         "tag": "concept",
         "duration": "3:01",
         "global": true
     },
     {
         "title": "Concept Trailer 2",
-        "URL": "https://www.youtube.com/embed/mvivPy7j6_Q?autoplay=1",
+        "URL": "mvivPy7j6_Q",
         "tag": "concept",
         "duration": "3:55",
         "global": true
     },
     {
         "title": "Concept Trailer 3",
-        "URL": "https://www.youtube.com/embed/_fHizOtMLnM?autoplay=1",
+        "URL": "_fHizOtMLnM",
         "tag": "concept",
         "duration": "3:41",
         "global": true

@@ -54,24 +54,24 @@ button:hover{
     padding: 5px;
 	text-overflow: clip;
 }
-.content-item {
+.cntnt-itm {
 	background-color: white;
 	border-bottom: 1px black;
 }
-.content-item:hover {
+.cntent-itm:hover {
 	color: white;
 }
-.content-item-cn {
+.cntnt-itm-cn {
 	background-color: grey;
 }
-.content-item-cn .playlist-item-title {
+.cntnt-itm-cn .playlist-item-title {
 	color: black;
 }
-.content-item-cn:hover {
+.cntnt-itm-cn:hover {
 	color: white;
 	background-color: rgb(49, 49, 49);
 }
-.content-item-cn:hover .playlist-item-title {
+.cntnt-itm-cn:hover .playlist-item-title {
 	color: white;
 }
 .content-detail{

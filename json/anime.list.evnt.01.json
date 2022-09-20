@@ -1,149 +1,142 @@
 [
     {
         "title": "Grani and the Knights’ Treasure",
-        "URL": "PCkOtRDvtjw",
+        "URL": "Wm1ajudc67U",
         "tag": "event",
-        "duration": "1:16",
+        "duration": "0:15",
         "global": true
     },
     {
         "title": "Operational Intelligence",
-        "URL": "lLSaBSdbKZ8",
+        "URL": "uYp80C-2WJo",
         "tag": "event",
-        "duration": "1:36",
+        "duration": "0:15",
         "global": true
     },
     {
         "title": "Heart of Surging Flame",
-        "URL": "soODvXnyR7g",
+        "URL": "oCF6rMee-iQ",
         "tag": "event",
-        "duration": "1:29",
+        "duration": "0:30",
         "global": true
     },
     {
         "title": "Code of Brawl",
-        "URL": "SJ1qvqEmkVQ",
+        "URL": "jfBBEoJ_e4A",
         "tag": "event",
-        "duration": "1:54",
+        "duration": "0:30",
+        "global": true
+    },
+    {
+        "title": "Contingency Contract",
+        "URL": "jcZmKJbnnEw",
+        "tag": "contingency contract",
+        "duration": "0:22",
         "global": true
     },
     {
         "title": "Ancient Forge",
-        "URL": "ITpoRdbl2k0",
+        "URL": "tVR3JCPGzeY",
         "tag": "event",
-        "duration": "1:28",
+        "duration": "0:30",
         "global": true
     },
     {
         "title": "Stories of Afternoon",
-        "URL": "zVaugCF2Nm0",
+        "URL": "p9PbjnIodAo",
         "tag": "event",
-        "duration": "1:12",
+        "duration": "0:18",
         "global": true
     },
     {
         "title": "Children of Ursus",
-        "URL": "N111el4Z68g",
+        "URL": "-FhC_YP7owk",
         "tag": "event",
-        "duration": "1:41",
+        "duration": "0:17",
         "global": true
     },
     {
         "title": "Twilight of Wolumonde",
-        "URL": "Kd-T3WoAEdk",
+        "URL": "ddajWhTUUM0",
         "tag": "event",
-        "duration": "2:02",
+        "duration": "0:20",
         "global": true
     },
     {
         "title": "Darknights Memoir",
-        "URL": "s_6iLn-my9I",
+        "URL": "nHtUnZEBQR8",
         "tag": "event",
-        "duration": "1:29",
+        "duration": "0:30",
         "global": true
     },
     {
         "title": "The Great Chief Returns",
-        "URL": "UepbQazBdFw",
+        "URL": "QFFDMbF53Is",
         "tag": "event",
-        "duration": "2:07",
+        "duration": "0:34",
         "global": true
     },
     {
         "title": "Rewinding Breeze",
-        "URL": "vxkYhpM7DWA",
+        "URL": "0N99iTMxIeo",
         "tag": "event",
-        "duration": "1:52",
+        "duration": "0:15",
         "global": true
     },
     {
         "title": "Maria Nearl",
-        "URL": "XX3OUpdMjlY",
+        "URL": "s3CoDfqzrHQ",
         "tag": "event",
-        "duration": "1:43",
-        "global": true
-    },
-    {
-        "title": "Coexistence",
-        "URL": "FYgp9qrHp7o",
-        "tag": "event",
-        "duration": "1:04",
+        "duration": "0:32",
         "global": true
     },
     {
         "title": "Mansfield Break",
-        "URL": "1cWnRnxEAzU",
+        "URL": "XayJjwW2OuM",
         "tag": "event",
-        "duration": "2:17",
+        "duration": "0:15",
         "global": true
     },
     {
         "title": "Beyond Here",
-        "URL": "nkNg1RUDU0I",
+        "URL": "0Xes1hbYro8",
         "tag": "event",
-        "duration": "1:57",
+        "duration": "0:15",
         "global": true
     },
     {
         "title": "Who Is Real",
-        "URL": "TqPoVMCJOMw",
+        "URL": "dNudyrqAnM4",
         "tag": "event",
-        "duration": "2:13",
+        "duration": "0:36",
         "global": true
     },
     {
         "title": "Operation Originium Dust",
-        "URL": "BJdldvvbxqo",
+        "URL": "ona-z824dN4",
         "tag": "event",
-        "duration": "2:02",
+        "duration": "0:26",
         "global": true
     },
     {
         "title": "A Walk in The Dust",
-        "URL": "EhRGF5YAwM4",
+        "URL": "mPywgCmyyc",
         "tag": "event",
-        "duration": "2:01",
+        "duration": "0:18",
         "global": true
     },
     {
         "title": "Under Tides",
-        "URL": "0hqKmICjh0g",
+        "URL": "OzKPl9Y6ryg",
         "tag": "event",
-        "duration": "3:25",
+        "duration": "0:32",
         "global": true
     },
     {
         "title": "Preluding Lights",
-        "URL": "BPncMVnf0Fo",
+        "URL": "KHMNyZ9GDmE",
         "tag": "event",
-        "duration": "1:48",
-        "global": true
-    },
-    {
-        "title": "Hymnoi Wisdom",
-        "URL": "fNbpJhM7dfQ",
-        "tag": "event",
-        "duration": "1:32",
+        "duration": "0:18",
         "global": true
     }
 ]

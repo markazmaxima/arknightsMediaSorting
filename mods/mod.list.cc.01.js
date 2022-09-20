@@ -32,6 +32,6 @@ $(document).ready(function () {
             i++;
             console.log(i+" duplicated");
             setData();
-        }, 100);
+        }, 0);
     };
 });

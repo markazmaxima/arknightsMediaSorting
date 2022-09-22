@@ -13,38 +13,34 @@
 </head>
 
 <body>
+	<audio id="player" src="../aud/m_avg_amiya_evolution.mp3" type="audio/mp3"></audio>
+
 	<div id="main-center-content">
 		<div style="height: 75px;"></div>
 
 		<div class="container">
 			<div class="cover-pic">
+				<img class="msc-cvr" src="../img/Arknights_OST_3 .png">
 			</div>
 
 			<div>
 				<button type="button" id="play" value="1">play</button>
 				<button type="button" id="pause" value="0" hidden>pause</button>
-				<button type="button" id="loop" value="0" onclick="loop()">loop</button>
-				<button type="button" id="mute" value="0" onclick="mute()">mute</button>
+				<button type="button" id="loop" value="0">loop</button>
+				<button type="button" id="mute" value="0">mute</button>
 			</div>
 
 			<div class="player-detail">
 				<label>volume</label>
-				<input type="range" id="vol-sldr" value="100" oninput="onChan()">
+				<input id="vol-sldr" type="range" value="100" max="100">
 
-				<p>current volume: <span id="in-txt">100</span></p>
-
-				<div style="height: 25px; background-color: black;"></div>
-
-				<audio id="player" src="../aud/m_avg_amiya_evolution.mp3" type="audio/mp3"
-					ontimeupdate="crrntDur(this)"></audio>
+				<p>current volume: <span id="vol-txt">100</span></p>
 
 				<label>duration</label>
-				<input id="dur-sldr" type="range" value="0" max="0" onchange="durChng()">
+				<input id="dur-sldr" type="range" value="0" max="0">
 
-				<p>max duration (second): <span id="maxDur">0</span></p>
-				<p>current duration (second): <span id="currSec">0</span></p>
-				<p>current duration (minute): <span id="currMin">0</span></p>
-				<p>new duration: <span id="newDur">none</span></p>
+				<p>full duration (min:sec): <span id="fullDur">0:00</span></p>
+				<p>live duration (min:sec): <span id="liveDur">0:00</span></p>
 			</div>
 		</div>
 	</div>

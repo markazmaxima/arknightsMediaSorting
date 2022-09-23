@@ -7,12 +7,15 @@ $(document).ready(function () {
     var muteBtn;
     var fullDur;
     var liveDur;
+    var seekDur;
     var volSldr;
     var durSldr;
     var volTxt;
     var maxTime;
     var secCount;
     var minCount;
+    var disableTimeUpdate = 0;
+    var tekken;
     initial();
 
     function initial() { //initial data grabbing
@@ -28,37 +31,58 @@ $(document).ready(function () {
         //string
         fullDur = document.getElementById("fullDur");
         liveDur = document.getElementById("liveDur");
+        seekDur = document.getElementById("seekDur");
         volTxt = document.getElementById("vol-txt");
-    };
-    mscPlyr.ontimeupdate = function () { trackDur() }; //show music prog in bar
-    function trackDur() {
-        var grabCurrDur = mscPlyr.currentTime; //grab current duration
-        tknCurSec = Math.trunc(grabCurrDur); //set second
-        tknCurMin = Math.trunc(grabCurrDur / 60); //set minute
 
-        minCount = tknCurMin;
-        minusSec = (tknCurMin * 60);
-        secCount = (tknCurSec - minusSec); //set every second and reset count every 60 sec
-
-        if (secCount < 10) {
-            secCount = "0" + secCount;
-        }
-        liveDur.innerHTML = (tknCurMin + ":" + secCount);
-
-        durSldr.value = tknCurSec;
-    };
-    $("#vol-sldr").on("input", function(){ //set player volume
-        var grabVol = volSldr.value;
-        tempVol = grabVol/100;
-        mscPlyr.volume = tempVol;
-        volTxt.innerHTML = grabVol;
-    });
-    $("#play").click(function () {
-        mscPlyr.play();
         maxTime = mscPlyr.duration; //grab max duration
         var tknMaxDur = Math.trunc(maxTime);
         durSldr.max = tknMaxDur; //set bar max
+    };
+    mscPlyr.ontimeupdate = function () { trackDur() }; //show music prog in bar
+    function trackDur() {
+        if (disableTimeUpdate == 0) {
+            var grabCurrDur = mscPlyr.currentTime; //grab current duration
+            tknCurSec = Math.trunc(grabCurrDur); //set second
+            tknCurMin = Math.trunc(grabCurrDur / 60); //set minute
 
+            minCount = tknCurMin;
+            minusSec = (tknCurMin * 60);
+            secCount = (tknCurSec - minusSec); //set every second and reset count every 60 sec
+
+            if (secCount < 10) {
+                secCount = "0" + secCount;
+            }
+            liveDur.innerHTML = (tknCurMin + ":" + secCount);
+
+            durSldr.value = tknCurSec;
+        } else {
+        }
+    };
+    $("#vol-sldr").on("input", function () { //set player volume
+        var grabVol = volSldr.value;
+        tempVol = grabVol / 100;
+        mscPlyr.volume = tempVol;
+        volTxt.innerHTML = grabVol;
+    });
+    $("#dur-sldr").on("input", function () { //set player duration
+        //disableTimeUpdate = 1;
+        mscPlyr.pause();
+        tekken = durSldr.value;
+        seekDur.innerHTML = tekken;
+        
+    });
+    $("#dur-sldr").on("mouseup", function () {
+        mscPlyr.currentTime = tekken;
+        mscPlyr.play();
+        //disableTimeUpdate = 0;
+    });
+    $("#seek").click(function () {
+        mscPlyr.currentTime = 100;
+    });
+    $("#play").click(function () {
+        mscPlyr.play();
+        plyBtn.value = "0";
+        pauBtn.value = "1";
         //full music duration
         fullMin = Math.round(maxTime / 60);
         fullSec = Math.round(maxTime / 60);
@@ -66,17 +90,9 @@ $(document).ready(function () {
             fullSec = "0" + fullSec;
         }
         fullDur.innerHTML = (fullMin + ":" + fullSec);
-
-        plyBtn.hidden = true;
-        pauBtn.hidden = false;
-        plyBtn.value = "0";
-        pauBtn.value = "1";
     });
     $("#pause").click(function () { //pause player
         mscPlyr.pause();
-
-        plyBtn.hidden = false;
-        pauBtn.hidden = true;
         plyBtn.value = "1";
         pauBtn.value = "0";
     });

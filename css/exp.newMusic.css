@@ -25,6 +25,12 @@ button {
   width: 100px;
   padding: 5px 15px;
 }
+#play[value="0"] {
+  display: none;
+}
+#pause[value="0"] {
+  display: none;
+}
 #loop[value="1"] {
   background-color: grey;
 }
@@ -61,9 +67,11 @@ button {
   transition: opacity 0.2s;
 }
 #vol-sldr:hover {
+  height: 6px;
   opacity: 1;
 }
 #dur-sldr:hover {
+  height: 6px;
   opacity: 1;
 }
 #vol-sldr::-webkit-slider-thumb {

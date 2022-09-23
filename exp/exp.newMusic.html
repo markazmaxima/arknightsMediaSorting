@@ -13,10 +13,10 @@
 </head>
 
 <body>
-	<audio id="player" src="../aud/m_avg_amiya_evolution.mp3" type="audio/mp3"></audio>
-
 	<div id="main-center-content">
 		<div style="height: 75px;"></div>
+
+		<audio id="player" src="../aud/m_avg_amiya_evolution.mp3" type="audio/mp3" controls></audio>
 
 		<div class="container">
 			<div class="cover-pic">
@@ -25,9 +25,10 @@
 
 			<div>
 				<button type="button" id="play" value="1">play</button>
-				<button type="button" id="pause" value="0" hidden>pause</button>
+				<button type="button" id="pause" value="0">pause</button>
 				<button type="button" id="loop" value="0">loop</button>
 				<button type="button" id="mute" value="0">mute</button>
+				<button type="button" id="seek">seek</button>
 			</div>
 
 			<div class="player-detail">
@@ -39,8 +40,8 @@
 				<label>duration</label>
 				<input id="dur-sldr" type="range" value="0" max="0">
 
-				<p>full duration (min:sec): <span id="fullDur">0:00</span></p>
-				<p>live duration (min:sec): <span id="liveDur">0:00</span></p>
+				<p><span id="liveDur">0:00</span> / <span id="fullDur">0:00</span></p>
+				<p>seeked duration: <span id="seekDur"></span></p>
 			</div>
 		</div>
 	</div>

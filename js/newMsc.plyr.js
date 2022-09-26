@@ -60,17 +60,15 @@ $(document).ready(function () {
         mscPlyr.volume = tempVol;
         volTxt.innerHTML = grabVol;
     });
-    $("#dur-sldr").on("change", function () { //set player duration
+    $("#dur-sldr").on("change", function(){
         disableTimeUpdate = 1;
-        seekDur.innerHTML = durSldr.value;
-        mscPlyr.currentTime = durSldr.value;
+            seekDur.innerHTML = durSldr.value;
+            mscPlyr.currentTime = durSldr.value;
 
-        console.log("bar manipulated");
+            console.log("bar manipulated");
 
-        plyBtn.value = "0";
-        pauBtn.value = "1";
-
-        mscPlyr.play(disableTimeUpdate = 0);
+            plyBtn.value = "0";
+            pauBtn.value = "1";
     });
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;
@@ -79,7 +77,7 @@ $(document).ready(function () {
         mscPlyr.play();
         plyBtn.value = "0";
         pauBtn.value = "1";
-        
+
         maxTime = mscPlyr.duration; //grab max duration
         var tknMaxDur = Math.trunc(maxTime);
         durSldr.max = tknMaxDur; //set bar max

@@ -66,15 +66,12 @@ $(document).ready(function () {
         
         tekken = durSldr.value;
         seekDur.innerHTML = tekken;
-        
-    });
-    $("#dur-sldr").on("mouseup", function () {
-        
-        mscPlyr.play();
+
+        console.log("bar manipulated");
+
         mscPlyr.currentTime = tekken;
-        disableTimeUpdate = 0;
         
-        console.log("bar release");
+        
     });
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;

@@ -15,6 +15,7 @@ function onChan() {
   mainPlayer.volume = val;
 }
 function durChan() {
+  disableTimeUpdate = 1;
   nTxt.innerHTML = duration.value;
   mainPlayer.currentTime = duration.value;
   mainPlayer.play();
@@ -23,15 +24,13 @@ function durChan() {
   var maxDuration = mainPlayer.duration;
   document.getElementById("mDur").innerHTML = maxDuration;
   duration.max = maxDuration;
-}
-function afterUp() {
-  console.log("key up");
+  disableTimeUpdate = 0;
 }
 function currentDuration(event) {
-  if(disableTimeUpdate == 0){
+  if (disableTimeUpdate == 0) {
     var curTime = event.currentTime;
-  document.getElementById("cDur").innerHTML = curTime;
-  duration.value = curTime;
+    document.getElementById("cDur").innerHTML = curTime;
+    duration.value = curTime;
   }
 }
 function play() {

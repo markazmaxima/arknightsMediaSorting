@@ -68,6 +68,8 @@ $(document).ready(function () {
 
         plyBtn.value = "0";
         pauBtn.value = "1";
+
+        mscPlyr.play();
     });
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;

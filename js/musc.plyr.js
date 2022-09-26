@@ -24,6 +24,9 @@ function durChan() {
   document.getElementById("mDur").innerHTML = maxDuration;
   duration.max = maxDuration;
 }
+function afterUp() {
+  console.log("key up");
+}
 function currentDuration(event) {
   if(disableTimeUpdate == 0){
     var curTime = event.currentTime;

@@ -14,8 +14,7 @@ $(document).ready(function () {
     var maxTime;
     var secCount;
     var minCount;
-    var disableTimeUpdate = 1;
-    var tekken;
+    var disableTimeUpdate = 0;
     initial();
 
     function initial() { //initial data grabbing
@@ -52,6 +51,7 @@ $(document).ready(function () {
 
             durSldr.value = tknCurSec;
         } else {
+            console.log("err, bar disabled!");
         }
     };
     $("#vol-sldr").on("input", function () { //set player volume
@@ -60,22 +60,15 @@ $(document).ready(function () {
         mscPlyr.volume = tempVol;
         volTxt.innerHTML = grabVol;
     });
-    $("#dur-sldr").on("input", function () { //set player duration
-        disableTimeUpdate = 1;
-        tekken = durSldr.value;
-        seekDur.innerHTML = tekken;
-        mscPlyr.currentTime = tekken;
+    $("#dur-sldr").on("change", function () { //set player duration
+        seekDur.innerHTML = durSldr.value;
+        mscPlyr.currentTime = durSldr.value;
 
         console.log("bar manipulated");
 
-        afterMani();
+        plyBtn.value = "0";
+        pauBtn.value = "1";
     });
-    function afterMani() {
-        disableTimeUpdate = 0;
-        
-
-        console.log("done manipulated");
-    };
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;
     });

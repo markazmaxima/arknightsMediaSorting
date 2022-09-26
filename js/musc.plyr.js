@@ -25,7 +25,7 @@ function durChan() {
   duration.max = maxDuration;
 }
 function currentDuration(event) {
-  if(disableTimeUpdate == 1){
+  if(disableTimeUpdate == 0){
     var curTime = event.currentTime;
   document.getElementById("cDur").innerHTML = curTime;
   duration.value = curTime;

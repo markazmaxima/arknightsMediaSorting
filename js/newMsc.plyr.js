@@ -14,7 +14,7 @@ $(document).ready(function () {
     var maxTime;
     var secCount;
     var minCount;
-    var disableTimeUpdate = 0;
+    var disableTimeUpdate = 1;
     var tekken;
     initial();
 
@@ -64,15 +64,18 @@ $(document).ready(function () {
         disableTimeUpdate = 1;
         tekken = durSldr.value;
         seekDur.innerHTML = tekken;
-
-        console.log("bar manipulated");
-    });
-    $("#dur-sldr").on("blur", function(){
-        disableTimeUpdate = 0;
         mscPlyr.currentTime = tekken;
 
-        console.log("done manipulated");
+        console.log("bar manipulated");
+
+        afterMani();
     });
+    function afterMani() {
+        disableTimeUpdate = 0;
+        
+
+        console.log("done manipulated");
+    };
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;
     });

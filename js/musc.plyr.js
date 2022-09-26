@@ -6,6 +6,8 @@ var txt = document.getElementById("in-txt");
 var cTxt = document.getElementById("cDur");
 var nTxt = document.getElementById("newDur");
 
+var disableTimeUpdate = 0;
+
 function onChan() {
   let val = slider.value;
   txt.innerHTML = val;
@@ -23,9 +25,11 @@ function durChan() {
   duration.max = maxDuration;
 }
 function currentDuration(event) {
-  var curTime = event.currentTime;
+  if(disableTimeUpdate == 1){
+    var curTime = event.currentTime;
   document.getElementById("cDur").innerHTML = curTime;
   duration.value = curTime;
+  }
 }
 function play() {
   var maxDuration = mainPlayer.duration;

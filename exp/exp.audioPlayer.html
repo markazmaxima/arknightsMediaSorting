@@ -8,7 +8,7 @@
     <title>Contingency Contract - Arknights</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/sys.global.css" type="text/css">
-    <link rel="stylesheet" href="../css/vid.plyr.css" type="text/css">
+	<link rel="stylesheet" href="../css/exp.audPlyr.css">
 </head>
 
 <body>
@@ -18,20 +18,10 @@
         <div class="main-middle-bar">
             <div class="wrapper">
                 <div class="left-flex-wrapper">
-                    <div class="player-box">
-                        <iframe src="https://www.youtube.com/embed/sGYLIlCQWtw?autoplay=1" id="prmry-vid-wrppr"
-                            class="iframe-content" frameborder="0" width="100%" height="100%"></iframe>
-                    </div>
-                    <div class="player-details">
-                        <div class="player-tags">
-                            <p id="video-tag">#tag</p>
-                        </div>
-                        <div id="player-title">title
-                        </div>
-                    </div>
+					<audio id="plyr" src="../aud/m_avg_amiya_evolution.mp3" controls></audio>
+					<input type="range">
+					<button id="seek">seek</button>
                 </div>
-
-                <button id="seek" type="button">seek</button>
             </div>
         </div>
     </div>

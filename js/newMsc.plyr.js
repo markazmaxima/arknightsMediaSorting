@@ -50,7 +50,7 @@ $(document).ready(function () {
             liveDur.innerHTML = (tknCurMin + ":" + secCount);
 
             durSldr.value = tknCurSec;
-        } else {
+        } if (disableTimeUpdate == 1) {
             console.log("err, bar disabled!");
         }
     };
@@ -61,6 +61,7 @@ $(document).ready(function () {
         volTxt.innerHTML = grabVol;
     });
     $("#dur-sldr").on("change", function () { //set player duration
+        disableTimeUpdate = 1;
         seekDur.innerHTML = durSldr.value;
         mscPlyr.currentTime = durSldr.value;
 
@@ -69,7 +70,7 @@ $(document).ready(function () {
         plyBtn.value = "0";
         pauBtn.value = "1";
 
-        mscPlyr.play();
+        mscPlyr.play(disableTimeUpdate = 0);
     });
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;

@@ -61,17 +61,17 @@ $(document).ready(function () {
         volTxt.innerHTML = grabVol;
     });
     $("#dur-sldr").on("input", function () { //set player duration
-        mscPlyr.pause();
         disableTimeUpdate = 1;
-        
         tekken = durSldr.value;
         seekDur.innerHTML = tekken;
 
         console.log("bar manipulated");
-
+    });
+    $("#dur-sldr").on("blur", function(){
+        disableTimeUpdate = 0;
         mscPlyr.currentTime = tekken;
-        
-        
+
+        console.log("done manipulated");
     });
     $("#seek").click(function () {
         mscPlyr.currentTime = 100;

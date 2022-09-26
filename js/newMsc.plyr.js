@@ -65,19 +65,23 @@ $(document).ready(function () {
         volTxt.innerHTML = grabVol;
     });
     $("#dur-sldr").on("input", function () { //set player duration
-        //disableTimeUpdate = 1;
         mscPlyr.pause();
+        disableTimeUpdate = 1;
+        
         tekken = durSldr.value;
         seekDur.innerHTML = tekken;
         
     });
     $("#dur-sldr").on("mouseup", function () {
-        mscPlyr.currentTime = tekken;
+        
         mscPlyr.play();
-        //disableTimeUpdate = 0;
+        mscPlyr.currentTime = tekken;
+        disableTimeUpdate = 0;
+        
+        console.log("bar release");
     });
     $("#seek").click(function () {
-        mscPlyr.currentTime = 100;
+        mscPlyr.currentTime = "100";
     });
     $("#play").click(function () {
         mscPlyr.play();

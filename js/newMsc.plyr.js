@@ -33,10 +33,6 @@ $(document).ready(function () {
         liveDur = document.getElementById("liveDur");
         seekDur = document.getElementById("seekDur");
         volTxt = document.getElementById("vol-txt");
-
-        maxTime = mscPlyr.duration; //grab max duration
-        var tknMaxDur = Math.trunc(maxTime);
-        durSldr.max = tknMaxDur; //set bar max
     };
     mscPlyr.ontimeupdate = function () { trackDur() }; //show music prog in bar
     function trackDur() {
@@ -81,12 +77,16 @@ $(document).ready(function () {
         console.log("bar release");
     });
     $("#seek").click(function () {
-        mscPlyr.currentTime = "100";
+        mscPlyr.currentTime = 100;
     });
     $("#play").click(function () {
         mscPlyr.play();
         plyBtn.value = "0";
         pauBtn.value = "1";
+        
+        maxTime = mscPlyr.duration; //grab max duration
+        var tknMaxDur = Math.trunc(maxTime);
+        durSldr.max = tknMaxDur; //set bar max
         //full music duration
         fullMin = Math.round(maxTime / 60);
         fullSec = Math.round(maxTime / 60);

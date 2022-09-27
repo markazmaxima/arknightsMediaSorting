@@ -46,5 +46,10 @@ $(document).ready(function(){
     $("#clearC").click(function(){
         localStorage.clear();
         alert("cache cleared!");
-    })
+        location.reload();
+    });
+//reload btn
+    $("#reload").click(function(){
+        location.reload();
+    });
 });

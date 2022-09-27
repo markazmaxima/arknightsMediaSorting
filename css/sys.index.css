@@ -33,10 +33,6 @@
 .light #link-to-about {
   border: 1px solid black;
 }
-#news, #checkmark {
-  text-align: left;
-  margin-bottom: 50px;
-}
 .sub-nav {
   color: white;
   font-size: 15px;

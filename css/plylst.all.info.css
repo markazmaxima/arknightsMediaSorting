@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    height: 100vh;
+}
+.direct{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: grey;
+    border-bottom: 1px solid black;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+.main-grup{
+    position: absolute;
+    height: 100%;
+}
+#left-dir{
+    width: 50px;
+    height: 100%;
+    background-color: grey;
+}
+#right-itm{
+    height: 100%;
+    background-color: green;
+}

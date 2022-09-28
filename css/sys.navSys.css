@@ -3,14 +3,17 @@
   margin: 0px;
   padding: 0px;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
   transition-duration: 0.1s;
 }
+
 a:hover {
   background-color: rgb(77, 77, 77);
 }
+
 nav {
   position: fixed;
   left: -300px;
@@ -18,7 +21,9 @@ nav {
   height: 100%;
   background-color: black;
   transition-duration: 0.2s;
+  overflow-y: auto;
 }
+
 nav a {
   display: block;
   text-decoration: none;
@@ -27,6 +32,7 @@ nav a {
   padding: 10px 20px;
   background-color: black;
 }
+
 .top-bar {
   position: fixed;
   height: 50px;
@@ -35,10 +41,12 @@ nav a {
   border-bottom: 5px solid rgb(160, 0, 0);
   border-radius: 0px 0px 50px 0px;
 }
+
 ul ul {
   display: none;
   border-left: 7px solid rgb(160, 0, 0);
 }
+
 .cover-for-nav-open {
   display: none;
   position: fixed;
@@ -47,19 +55,23 @@ ul ul {
   background-color: black;
   opacity: 50%;
 }
+
 .menu-header {
   height: 50px;
   margin-bottom: 5px;
   border-bottom: 5px solid rgb(160, 0, 0);
 }
+
 .menu-header :nth-child(1) {
   font-size: 24px;
   line-height: 50px;
   padding: 0px 20px;
 }
+
 .main-icon {
   background: url(../img/arknightsLogo.png) no-repeat 6px center;
 }
+
 .top-bar-item {
   float: left;
   color: white;
@@ -68,32 +80,56 @@ ul ul {
   cursor: pointer;
   margin: 0px;
 }
+
 .top-bar :nth-child(1) {
   font-size: 24px;
   line-height: 50px;
   padding: 0px 20px;
 }
+
 .top-bar div {
   display: inline-block;
   height: 50px;
 }
+
 .light a {
   background-color: grey;
 }
+
 .light a:hover {
   background-color: #555;
 }
+
 .light nav {
   background-color: grey;
 }
+
 .light .top-bar {
   background-color: grey;
 }
+
 .light .top-bar-item {
   color: white;
   background-color: grey;
 }
+
 .light ul ul {
   background-color: grey;
 }
 
+::-webkit-scrollbar {
+  width: 5;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

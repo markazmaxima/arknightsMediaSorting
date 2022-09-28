@@ -18,7 +18,7 @@ $(document).ready(function () {
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
 
-        $(getBtnLst).attr("onclick", "parent.document.getElementById('prmry-vid-wrppr').src = 'https://www.youtube.com/embed/"+grabURL+"?autoplay=1';parent.document.getElementById('player-title').innerHTML='"+grabTitle+"'");
+        $(getBtnLst).attr("onclick", "parent.document.getElementById('prmry-vid-wrppr').src = 'https://www.youtube.com/embed/"+grabURL+"?autoplay=1';parent.document.getElementById('plyr-title').innerHTML='"+grabTitle+"'");
 
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;

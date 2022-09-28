@@ -23,10 +23,8 @@ $(document).ready(function(){
         var tknDark = localStorage.getItem("siteTheme");
         if(tknDark=="dark"){
             localStorage.setItem("siteTheme", "light");
-            location.reload();
         } else if(tknDark=="light"){
             localStorage.setItem("siteTheme", "dark");
-            location.reload();
         }
     });
 //experimental btn

@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $("#left-itm").mouseenter(function(){
+    $(".bar-left-btn").mouseenter(function(){
         $("#right-itm").css({
             left: '200px'
         });
     });
-    $("#left-itm").mouseout(function(){
+    $(".bar-left-btn").mouseout(function(){
         $("#right-itm").css({
             left: '50px'
         });

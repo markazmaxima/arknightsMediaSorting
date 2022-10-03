@@ -21,7 +21,6 @@ nav {
   height: 100%;
   background-color: black;
   transition-duration: 0.2s;
-  overflow-y: auto;
 }
 
 nav a {
@@ -31,6 +30,13 @@ nav a {
   font-size: 20px;
   padding: 10px 20px;
   background-color: black;
+}
+
+.side-nav-itm{
+  position: absolute;
+  height: calc(100% - 60px);
+  width: 100%;
+  overflow-y: auto;
 }
 
 .top-bar {

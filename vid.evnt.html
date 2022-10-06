@@ -12,9 +12,8 @@
 </head>
 
 <body>
-    <div id="main-center-content">
-
-        <div class="main-bar">
+    <div class="master-wrppr">
+        <div class="master-cntr-wrppr">
             <div class="main-wrppr">
                 <div class="left-flx-wrppr">
                     <div class="plyr-box">
@@ -34,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="right-flx-wrppr">
+                <div  id="right-flx-wrppr" class="right-flx-wrppr">
                     <div class="plylst">
                         <iframe id="vid-plylst" class="iframe-content" src="vid.list/vid.trailer/list.evnt.01.html" width="100%" height="100%"></iframe>
                     </div>
@@ -43,10 +42,16 @@
         </div>
     </div>
 
+    <div id="togglePlylst" hidden>
+        <button id="togglePlylst-open" class="toggleBtn">show playlist</button>
+        <button id="togglePlylst-close" class="toggleBtn" hidden>hide playlist</button>
+    </div>
+
     <iframe src="sys.navSys.html" id="iframe-nav-system" frameborder="0"></iframe>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/sys.global.js"></script>
+    <script src="js/sys.plyr.js"></script>
 </body>
 
 </html>

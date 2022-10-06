@@ -48,11 +48,5 @@ iframe{
 		text-align: center;
 	}
 }
-@media (max-width:720px){
-	.patch-note-01{
-		width: auto;
-		padding: 25px;
-	}
-}
 
 

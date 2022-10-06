@@ -8,13 +8,13 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: rgb(42, 42, 42);
-  height: 100%;
+p {
+  color: white;
+  font-size: 14;
 }
 
-#void {
-  height: 50px;
+body {
+  background-color: rgb(42, 42, 42);
 }
 
 .dark {
@@ -25,13 +25,22 @@ body {
   background: white;
 }
 
-#main-center-content {
+.master-wrppr {
   position: absolute;
   width: 100%;
 }
 
-#main-content {
-  position: relative;
+.master-cntr-wrppr{
+  margin-top: 60px;
+  padding: 0px 300px;
+}
+
+.hori-cont-flex {
+  display: flex;
+}
+
+.vert-cont-flex{
+  padding: 0px 300px;
 }
 
 .light legend {
@@ -40,11 +49,6 @@ body {
 
 .light label {
   color: black;
-}
-
-p {
-  color: white;
-  font-size: 14;
 }
 
 .light p {
@@ -61,7 +65,7 @@ p {
 }
 
 fieldset {
-  width: 400px;
+  width: calc(400px - 46px);
   height: 100%;
   padding: 20px;
   margin-left: auto;
@@ -107,16 +111,30 @@ legend {
   background: #555;
 }
 
-@media (max-width: 720px) {
-  #desktop-logo {
-    display: none;
+@media (max-width: 1200px) {
+  .master-cntr-wrppr{
+    padding: 0px 150px;
   }
+}
 
-  #mobile-logo {
-    display: block;
+@media (max-width: 900px) {
+  .master-cntr-wrppr{
+    padding: 0px 0px;
   }
+}
 
+@media (max-width: 850px) {
+  .hori-cont-flex {
+    flex-direction: column;
+    padding: 0px 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hori-cont-flex{
+    padding: 0px;
+  }
   fieldset {
-    width: auto;
+    width: calc(100% - 46px);
   }
 }

@@ -1,9 +1,4 @@
 /* CSS Document */
-.main-bar {
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-}
 
 .main-wrppr {
     position: absolute;
@@ -25,6 +20,7 @@
     position: relative;
     flex: 35%;
     margin: 100px 10px 10px 10px;
+    transition-duration: 0.3s;
 }
 
 .plyr-box {
@@ -98,6 +94,18 @@
     padding-top: 147%;
 }
 
+#togglePlylst{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.toggleBtn{
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+}
+
 @media (max-width: 1500px) {
     .main-wrppr {
         padding: 0px 200px;
@@ -111,5 +119,31 @@
 @media (max-width: 1100px) {
     .main-wrppr {
         padding: 0px 0px;
+    }
+}
+@media (max-width: 700px) {
+    .main-wrppr{
+        flex-direction: column;
+    }
+    .main-wrppr{
+        flex: none
+    }
+    .left-flx-wrppr{
+        margin: 60px 0px 0px 0px;
+    }
+    .right-flx-wrppr{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: calc(-1 * 100%);
+        margin: 60px 0px 0px 0px;
+    }
+    #togglePlylst{
+        display: block;
+    }
+    .plylst{
+        position: absolute;
+        padding: 0;
+        height: 87%;
     }
 }

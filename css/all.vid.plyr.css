@@ -1,19 +1,4 @@
 /* CSS Document */
-.main-bar {
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-}
-
-.main-wrppr {
-    position: absolute;
-    display: flex;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    padding: 0px 300px;
-}
 
 .left-flx-wrppr {
     position: relative;
@@ -96,20 +81,4 @@
     left: 0px;
     right: 0px;
     padding-top: 147%;
-}
-
-@media (max-width: 1500px) {
-    .main-wrppr {
-        padding: 0px 200px;
-    }
-}
-@media (max-width: 1300px) {
-    .main-wrppr {
-        padding: 0px 100px;
-    }
-}
-@media (max-width: 1100px) {
-    .main-wrppr {
-        padding: 0px 0px;
-    }
 }

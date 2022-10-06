@@ -9,20 +9,16 @@
         margin: 0;
     }
 
-    .version-note.p {
-        font-size: 100px;
-    }
-
     body {
         background-color: grey;
+        padding: 30px 0px;
     }
 
     .version-note {
         height: 95%;
-        width: 55%;
+        width: 90%;
         padding: 14px;
         margin: auto;
-        margin: auto auto 30px auto;
         border: 5px solid black;
         border-radius: 25px;
     }
@@ -63,11 +59,19 @@
         color: black;
         text-decoration-line: none;
     }
+
+    @media (max-width: 650px) {
+        .version-note{
+            padding: 0;
+        }
+    }
 </style>
 
 <body>
     <fieldset class="version-note">
-        <legend>Site Update v0.8</legend>
+        <legend>Site Update v0.9</legend>
+        <p id="head">v0.9.0 (6 October 2022)</p>
+        <p id="con">&rsaquo; fix layout for mobile, now mobile user also can use all the current future.</p>
         <p id="head">v0.8.0 (20 September 2022)</p>
         <p id="con">&rsaquo; tidy up the playlist modules. <br>
             &rsaquo; squash the playlist order problems. <br>
@@ -164,7 +168,8 @@
             <br>
             &rsaquo; player page is now responsive for all device, global site min-width is 350px. <br>
             &rsaquo; the [all] filter actually show all relatable items, ALL OF IT. <br>
-            &rsaquo; other miscellaneous change and fixed.</p></br>
+            &rsaquo; other miscellaneous change and fixed.
+        </p></br>
 
         <p id="head">v0.0.5 (9 February 2022)</p>
         <p id="con">&rsaquo; added new [Dark Mode] setting. the dark mode is on by default and can be toggle in
@@ -189,7 +194,8 @@
             <br>
             &rsaquo; new navigation system for mobile user (max-width: 600px). <br>
             &rsaquo; Arknights index page got new button. <br>
-            &rsaquo; new css file for mobile user.</p></br>
+            &rsaquo; new css file for mobile user.
+        </p></br>
 
         <p id="head">v0.0.2 (unrecorded)</p>
         <p id="con">&rsaquo; re-design the whole color, structure, etc. <br>

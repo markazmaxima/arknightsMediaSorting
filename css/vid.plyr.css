@@ -100,22 +100,21 @@
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    transition: 0.3s;
 }
 
 .m-right-flx-wrppr{
     position: fixed;
-    top: 0;
+    top: calc(50px + 100%);
     left: 0;
     right: 0;
     bottom: 0;
     padding-top: 60px;
     padding-bottom: 50px;
+    transition-duration: 0.3s;
 }
 
 .m-iframe-content{
     position: relative;
-    top: calc(50px + 100%);
     border: none;
     border-radius: 25px;
     transition-duration: 0.3s;

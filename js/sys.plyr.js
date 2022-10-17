@@ -1,5 +1,6 @@
 $(document).ready(function () {
     includePlyr();
+    setPlyrInfo();
 
     function includePlyr() {
         var z, i, elmnt, file, xhttp;
@@ -14,7 +15,7 @@ $(document).ready(function () {
                         if (this.status == 200) { elmnt.innerHTML = this.responseText; }
                         if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
                         elmnt.removeAttribute("ins-plyr-vid");
-                        includeHTML();
+                        includePlyr();
                     }
                 }
                 xhttp.open("GET", file, true);
@@ -24,8 +25,11 @@ $(document).ready(function () {
         }
     }
 
+    function setPlyrInfo(){
+    }
+
     $("#togglePlylst-open").click(function () {
-        $("#m-vid-plylst").css({
+        $("#m-right-flx-wrppr").css({
             top: '0px'
         });
         $("#plylst-bckgrnd").show();
@@ -33,7 +37,7 @@ $(document).ready(function () {
         $("#togglePlylst-close").show();
     });
     $("#togglePlylst-close").click(function () {
-        $("#m-vid-plylst").css({
+        $("#m-right-flx-wrppr").css({
             top: 'calc(50px + 100%)'
         });
         $("#plylst-bckgrnd").hide();

@@ -30,7 +30,7 @@ html{
 	font-size: 20px;
 	padding: 0px 5px;
 	border: 2px solid black;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 
 span{
@@ -55,7 +55,7 @@ span{
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #888;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 
 /* Handle on hover */

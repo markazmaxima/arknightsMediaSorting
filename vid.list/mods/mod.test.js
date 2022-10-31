@@ -20,6 +20,9 @@ $(document).ready(function () {
 
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;
+
+        setID();
+        
         if (i < grabArrLngth) {
             duplicate();
         };
@@ -31,4 +34,12 @@ $(document).ready(function () {
             setData();
         }, 10);
     };
+    function setID() { //set new ID for each button
+        let newID = document.getElementById("btn-lst").childNodes[i];
+        console.log(newID);
+    };
+
+    $(".cntnt-itm").click(function() {
+        alert("null");
+    });
 });

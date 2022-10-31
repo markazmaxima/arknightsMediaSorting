@@ -1,4 +1,5 @@
-import master from '../json/list.mv.01.json' assert {type: 'json'};
+"use strict";
+import master from '../json/testList.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
@@ -17,8 +18,6 @@ $(document).ready(function () {
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
 
-        $(getBtnLst).attr("onclick", "parent.document.getElementById('prmry-vid-wrppr').src = 'https://www.youtube.com/embed/"+grabURL+"?autoplay=1';parent.document.getElementById('plyr-title').innerHTML='"+grabTitle+"'");
-
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;
         if (i < grabArrLngth) {
@@ -29,8 +28,7 @@ $(document).ready(function () {
         const loop = setTimeout(() => {
             $("#btnLst-itm").clone().appendTo("#btn-lst");
             i++;
-            console.log(i+" duplicated");
             setData();
-        }, 0);
+        }, 10);
     };
 });

@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     function setData() {
         let grabTitle = master[i].title; //grab data
-        let grabURL = master[i].URL; //grab URL
+        
         let grabTag = master[i].tag; //grab tag
         let grabDur = master[i].duration; //grab duration
         let grabArrLngth = master.length; //grab array length
@@ -42,5 +42,13 @@ $(document).ready(function () {
 
             setNewID();
         }
-    }
+    };
+    
+    $(".cntnt-itm").click(function() {
+        let nul = $(this).attr("id");
+        let grabURL = master[nul].URL; //grab URL
+
+        let newUrl = "https://www.youtube.com/embed/"+grabURL+"?autoplay=1";
+        parent.document.getElementById('prmry-vid-wrppr').setAttribute("src", newUrl);
+    })
 });

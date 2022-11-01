@@ -19,15 +19,12 @@ $(document).ready(function () {
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
 
-        console.log(getBtnLst);
-
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;
         if (i < grabArrLngth) {
             duplicate();
         } else {
-            const tkn = document.getElementById("btn-lst").childNodes[2];
-            tkn.setAttribute("id", "555");
+            setNewID();
         };
     };
     function duplicate() {
@@ -35,4 +32,15 @@ $(document).ready(function () {
         i++;
         setData();
     };
+    function setNewID() {
+        let childLen = document.getElementById("btn-lst").childNodes.length;
+        
+        if (rp < childLen) {
+            let childTkn = document.getElementById("btn-lst").childNodes[rp];
+            childTkn.setAttribute("id", rp);
+            rp++;
+
+            setNewID();
+        }
+    }
 });

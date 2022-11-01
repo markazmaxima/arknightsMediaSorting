@@ -3,6 +3,7 @@ import master from '../json/testList.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
+    var rp = 0;
 
     setData();
 
@@ -18,28 +19,20 @@ $(document).ready(function () {
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
 
+        console.log(getBtnLst);
+
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;
-
-        setID();
-        
         if (i < grabArrLngth) {
             duplicate();
+        } else {
+            const tkn = document.getElementById("btn-lst").childNodes[2];
+            tkn.setAttribute("id", "555");
         };
     };
     function duplicate() {
-        const loop = setTimeout(() => {
-            $("#btnLst-itm").clone().appendTo("#btn-lst");
-            i++;
-            setData();
-        }, 10);
+        $("#btnLst-itm").clone().appendTo("#btn-lst");
+        i++;
+        setData();
     };
-    function setID() { //set new ID for each button
-        let newID = document.getElementById("btn-lst").childNodes[i];
-        console.log(newID);
-    };
-
-    $(".cntnt-itm").click(function() {
-        alert("null");
-    });
 });

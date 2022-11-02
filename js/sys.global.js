@@ -1,6 +1,7 @@
 $(document).ready(function(){
     setGlobalTheme();
     setExperimentAccess();
+    showSys();
     function setGlobalTheme(){
         var thm = localStorage.getItem("siteTheme");
         if(thm=="dark"){
@@ -22,5 +23,8 @@ $(document).ready(function(){
             $("#the-experiment").hide();
             $("#nav-music").hide();
         }
+    };
+    function showSys() {
+        $(".master-wrppr").show();
     };
 });

@@ -29,6 +29,7 @@ body {
 .master-wrppr {
   position: absolute;
   width: 100%;
+  display: none;
 }
 
 .master-cntr-wrppr{

@@ -55,11 +55,15 @@ button:hover{
 	text-overflow: clip;
 }
 .cntnt-itm {
+	text-align: left;
+	padding-left: 10px;
 	background-color: white;
 	border-bottom: 1px black;
+	transition-duration: 0.3s;
 }
-.cntent-itm:hover {
+.cntnt-itm:hover {
 	color: white;
+	border-radius: 15px;
 }
 .cntnt-itm-cn {
 	background-color: grey;

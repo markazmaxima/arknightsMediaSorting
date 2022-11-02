@@ -9,12 +9,9 @@ $(document).ready(function () {
 
     function setData() {
         let grabTitle = master[i].title; //grab data
-        
-        
         let grabDur = master[i].duration; //grab duration
         let grabArrLngth = master.length; //grab array length
         grabArrLngth = grabArrLngth - 1;
-
         let getBtnLst = document.getElementById("btn-lst").childNodes[i]; //fetch btn nodes
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration

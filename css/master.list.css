@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.back-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.back-btn-col {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px 0 0 10px;
+    transition-duration: 0.3s;
+}
+
+.back-btn-col:hover {
+    background-color: grey;
+}
+
+.front-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40px;
+    background-color: aqua;
+    transition-duration: 0.3s;
+}
+
+.iframe-plylst {
+    width: 100%;
+    height: 100%;
+}

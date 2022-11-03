@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  user-select: none;
 }
 
 a {
@@ -16,6 +17,8 @@ p {
 
 body {
   background-color: rgb(42, 42, 42);
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .dark {
@@ -29,6 +32,7 @@ body {
 .master-wrppr {
   position: absolute;
   width: 100%;
+  display: none;
 }
 
 .master-cntr-wrppr{

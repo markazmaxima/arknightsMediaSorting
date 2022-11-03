@@ -1,4 +1,3 @@
-"use strict";
 import master from '../json/list.mv.01.json' assert {type: 'json'};
 
 $(document).ready(function () {

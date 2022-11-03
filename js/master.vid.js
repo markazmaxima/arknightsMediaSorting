@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $(".back-btn-col").hover(function(){
-        $(".front-panel").css({left: '140px'});
+        $(".front-panel").css({left: '150px'});
     }, function(){
-        $(".front-panel").css({left: '40px'});
+        $(".front-panel").css({left: '50px'});
     });
+    $(".indi-selec").show();
 });

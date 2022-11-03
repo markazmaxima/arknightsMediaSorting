@@ -15,7 +15,6 @@ $(document).ready(function () {
         let getBtnLst = document.getElementById("btn-lst").childNodes[i]; //fetch btn nodes
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
         let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
-
         getInBtn.innerHTML = grabTitle;
         getInfDur.innerHTML = grabDur;
         if (i < grabArrLngth) {
@@ -31,25 +30,21 @@ $(document).ready(function () {
     };
     function setNewID() {
         let childLen = document.getElementById("btn-lst").childNodes.length;
-        
         if (rp < childLen) {
             let childTkn = document.getElementById("btn-lst").childNodes[rp];
             childTkn.setAttribute("id", rp);
             rp++;
-
             setNewID();
         }
     };
-    
     $(".cntnt-itm").click(function() {
         let nul = $(this).attr("id");
-        let grabTitle = master[i].title; //grab data
-        let grabTag = master[i].tag; //grab tag
+        let grabTitle = master[nul].title; //grab data
+        let grabTag = master[nul].tag; //grab tag
         let grabURL = master[nul].URL; //grab URL
-
         let newUrl = "https://www.youtube.com/embed/"+grabURL+"?autoplay=1";
         parent.document.getElementById("prmry-vid-wrppr").setAttribute("src", newUrl);
         parent.document.getElementById("plyr-title").innerHTML = grabTitle;
         parent.document.getElementById("itm-tag").innerHTML = grabTag;
-    })
+    });
 });

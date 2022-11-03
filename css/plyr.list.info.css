@@ -46,6 +46,9 @@ button{
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
+#btn-lst{
+	margin-top: 10px;
+}
 button:hover{
     background-color: grey;
 }
@@ -55,10 +58,13 @@ button:hover{
 	text-overflow: clip;
 }
 .cntnt-itm {
+	color: white;
+	height: 50px;
 	text-align: left;
+	font-weight: bold;
 	padding-left: 10px;
-	background-color: white;
-	border-bottom: 1px black;
+	background: none;
+	border: none;
 	transition-duration: 0.3s;
 }
 .cntnt-itm:hover {

@@ -2,19 +2,24 @@
     {
         "trailer": [
             {
-                "anchor": "Official Trailers"
+                "anchor": "Official Trailers",
+                "link": "../vid.trailer/list.cncpt.01.html"
             },
             {
-                "anchor": "Animation Trailers"
+                "anchor": "Animation Trailers",
+                "link": "../vid.anime/list.main.01.html"
             },
             {
-                "anchor": "3D Trailer"
+                "anchor": "3D Trailer",
+                "link": "../vid.anime/list.tease.01.html"
             },
             {
-                "anchor": "Music Videos"
+                "anchor": "Music Videos",
+                "link": "../vid.trailer/list.mv.01.html"
             },
             {
-                "anchor": "Terra"
+                "anchor": "Terra",
+                "link": "../vid.anime/list.terra.01.html"
             }
         ]
     }

@@ -12,7 +12,6 @@ $(document).ready(function () {
         let trailerArrLnght = ((master[0].trailer.length) - 1);
         let pointBtn = document.getElementById("direct-btn-list").childNodes[i];
         let setTitle = pointBtn.childNodes[1];
-        console.log(trailerAnchor);
         setTitle.innerHTML = trailerAnchor;
 
         if (i < trailerArrLnght) {
@@ -39,6 +38,8 @@ $(document).ready(function () {
     };
     $(".direct-btn").click(function() {
         let nul = $(this).attr("id");
-        alert(nul);
+        let pointLink = master[0].trailer[nul].link;
+
+        parent.document.getElementById("iframe-plylst").src = pointLink;
     });
 });

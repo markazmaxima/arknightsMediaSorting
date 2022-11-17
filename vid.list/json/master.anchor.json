@@ -3,27 +3,33 @@
         "trailer": [
             {
                 "anchor": "Official Trailers",
-                "link": "../vid.trailer/list.offi-trailer.html"
+                "link": "../master.list/vid//list.offi-trailer.html",
+                "masterTrack": "cncpt-vid"
             },
             {
                 "anchor": "Story Trailer",
-                "link": "../"
+                "link": "../",
+                "masterTrack": "story-vid"
             },
             {
                 "anchor": "Animation Trailers",
-                "link": "../vid.anime/list.main.01.html"
+                "link": "../",
+                "masterTrack": "story-anime-vid"
             },
             {
                 "anchor": "3D Trailer",
-                "link": "../vid.anime/list.tease.01.html"
+                "link": "../",
+                "masterTrack": "tease-vid"
             },
             {
                 "anchor": "Music Videos",
-                "link": "../vid.trailer/list.mv.01.html"
+                "link": "../",
+                "masterTrack": "music-vid"
             },
             {
                 "anchor": "Terra",
-                "link": "../vid.anime/list.terra.01.html"
+                "link": "../",
+                "masterTrack": "terra-ex"
             }
         ]
     }

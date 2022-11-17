@@ -39,9 +39,15 @@ $(document).ready(function () {
     $(".direct-btn").click(function() {
         let nul = $(this).attr("id");
         let pointLink = master[0].trailer[nul].link;
+        let trckr = master[0].trailer[nul].masterTrack;
+
+        console.log(nul);
+
+        parent.$(".round-btn").css({"opacity": "1", "width": "30px", "cursor": "pointer"});
+        var setPre = localStorage.getItem("direct-now");
+        localStorage.setItem("direct-pre", setPre);
+        localStorage.setItem("direct-now", trckr);
 
         parent.document.getElementById("iframe-plylst").src = pointLink;
-        parent.$("#round-btn").show();
-        parent.$(".master-bar").width("100% - 30px");
     });
 });

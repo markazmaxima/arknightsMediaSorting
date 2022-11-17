@@ -4,10 +4,9 @@ $(document).ready(function () {
     }, function () {
         $(".front-panel").css({ left: '50px', background: 'none' });
     });
-
-    if (localStorage.getItem("vid-direct-face") === null) {
-        localStorage.setItem("vid-direct-face", "main-vid");
-    }
+    
+    localStorage.setItem("direct-now", "main-vid");
+    localStorage.setItem("direct-pre", "");
 
     $(".indi-selec").show(); //finish load page
 
@@ -16,9 +15,14 @@ $(document).ready(function () {
     });
 
     $("#round-btn").click(function(){
-        var dirFace = localStorage.getItem("vid-direct-face");
+        var dirFace = localStorage.getItem("direct-now");
         if(dirFace == "main-vid"){
-            alert("already at top directory") //nothing
+            //nothing
+        } else if (dirFace == "cncpt-vid"){
+            $(".round-btn").css({"opacity": "0", "width": "10px", "cursor": "auto"});
+            document.getElementById("iframe-plylst").src = "dir.vid.html";
+            localStorage.setItem("direct-now", "main-vid");
+            localStorage.setItem("direct-pre", "");
         };
     });
 });

@@ -10,7 +10,7 @@ $(document).ready(function () {
     $(".indi-selec").show(); //finish load page
 
     $("#back-btn-vid").click(function () {
-        document.getElementById("iframe-plylst").src = "dir.vid.html";
+        document.getElementById("iframe-plylst").src = "director.list.html";
     });
 
     $("#round-btn").click(function(){
@@ -19,7 +19,7 @@ $(document).ready(function () {
             //nothing
         } else if (dirFace == "cncpt-vid"){
             $(".round-btn").css({"opacity": "0", "width": "10px", "cursor": "auto"});
-            document.getElementById("iframe-plylst").src = "dir.vid.html";
+            document.getElementById("iframe-plylst").src = "director.list.html";
             localStorage.setItem("direct-now", "main-vid");
             localStorage.setItem("direct-pre", "");
         };

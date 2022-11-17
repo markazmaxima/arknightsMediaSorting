@@ -6,6 +6,10 @@
                 "link": "../vid.trailer/list.offi-trailer.html"
             },
             {
+                "anchor": "Story Trailer",
+                "link": "../"
+            },
+            {
                 "anchor": "Animation Trailers",
                 "link": "../vid.anime/list.main.01.html"
             },

@@ -13,5 +13,12 @@ $(document).ready(function () {
 
     $("#back-btn-vid").click(function () {
         document.getElementById("iframe-plylst").src = "dir.vid.html";
-    })
+    });
+
+    $("#round-btn").click(function(){
+        var dirFace = localStorage.getItem("vid-direct-face");
+        if(dirFace == "main-vid"){
+            alert("already at top directory") //nothing
+        };
+    });
 });

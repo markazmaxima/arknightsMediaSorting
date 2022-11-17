@@ -23,8 +23,9 @@ p{
 }
 
 .round-btn{
+    opacity: 0;
     color: white;
-    width: 30px;
+    width: 10px;
     height: 30px;
     border-radius: 15px;
     font-size: 20px;

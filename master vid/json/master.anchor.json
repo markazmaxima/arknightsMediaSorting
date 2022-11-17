@@ -1,0 +1,34 @@
+{
+    "trailer": [
+        {
+            "anchor": "Official Trailers",
+            "link": "list.offi-trailer",
+            "masterTrack": "cncpt-vid"
+        },
+        {
+            "anchor": "Story Trailer",
+            "link": "list.offi-trailer",
+            "masterTrack": "story-vid"
+        },
+        {
+            "anchor": "Animation Trailers",
+            "link": "../",
+            "masterTrack": "story-anime-vid"
+        },
+        {
+            "anchor": "3D Trailer",
+            "link": "../",
+            "masterTrack": "tease-vid"
+        },
+        {
+            "anchor": "Music Videos",
+            "link": "../",
+            "masterTrack": "music-vid"
+        },
+        {
+            "anchor": "Terra",
+            "link": "../",
+            "masterTrack": "terra-ex"
+        }
+    ]
+}

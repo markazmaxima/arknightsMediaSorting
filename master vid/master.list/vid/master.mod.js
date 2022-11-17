@@ -1,5 +1,5 @@
 "use strict";
-import master from '../json/master.anchor.json' assert {type: 'json'};
+import master from '../../../json/master.anchor.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
@@ -8,8 +8,8 @@ $(document).ready(function () {
     setData();
 
     function setData() {
-        let trailerAnchor = master[0].trailer[i].anchor;
-        let trailerArrLnght = ((master[0].trailer.length) - 1);
+        let trailerAnchor = master.trailer[i].anchor;
+        let trailerArrLnght = ((master.trailer.length) - 1);
         let pointBtn = document.getElementById("direct-btn-list").childNodes[i];
         let setTitle = pointBtn.childNodes[1];
         setTitle.innerHTML = trailerAnchor;
@@ -38,16 +38,11 @@ $(document).ready(function () {
     };
     $(".direct-btn").click(function() {
         let nul = $(this).attr("id");
-        let pointLink = master[0].trailer[nul].link;
-        let trckr = master[0].trailer[nul].masterTrack;
-
-        console.log(nul);
-
-        parent.$(".round-btn").css({"opacity": "1", "width": "30px", "cursor": "pointer"});
-        var setPre = localStorage.getItem("direct-now");
-        localStorage.setItem("direct-pre", setPre);
+        let pointLink = master.trailer[nul].link;
+        let trckr = master.trailer[nul].masterTrack;
         localStorage.setItem("direct-now", trckr);
-
-        parent.document.getElementById("iframe-plylst").src = pointLink;
+        localStorage.setItem("direct-pre", "main-vid");
+        parent.$(".round-btn").css({"opacity": "1", "width": "30px", "cursor": "pointer"});
+        parent.document.getElementById("iframe-plylst").src = "vid/"+pointLink+".html";
     });
 });

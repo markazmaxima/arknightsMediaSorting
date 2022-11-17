@@ -1,5 +1,5 @@
 "use strict";
-import master from '../json/testList.json' assert {type: 'json'};
+import master from '../../../json/testList.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;

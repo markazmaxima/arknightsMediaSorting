@@ -1,5 +1,5 @@
 "use strict";
-import master from '../../../json/master.anchor.json' assert {type: 'json'};
+import master from '../json/master.anchor.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
@@ -38,11 +38,12 @@ $(document).ready(function () {
     };
     $(".direct-btn").click(function() {
         let nul = $(this).attr("id");
+        console.log(nul);
         let pointLink = master.trailer[nul].link;
         let trckr = master.trailer[nul].masterTrack;
         localStorage.setItem("direct-now", trckr);
         localStorage.setItem("direct-pre", "main-vid");
         parent.$(".round-btn").css({"opacity": "1", "width": "30px", "cursor": "pointer"});
-        parent.document.getElementById("iframe-plylst").src = "vid/"+pointLink+".html";
+        parent.document.getElementById("iframe-plylst").src = "master.list/"+pointLink+".html";
     });
 });

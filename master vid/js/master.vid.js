@@ -19,6 +19,7 @@ $(document).ready(function () {
             //nothing
         } else if (dirFace == "cncpt-vid"){
             $(".round-btn").css({"opacity": "0", "width": "10px", "cursor": "auto"});
+            document.getElementById("iframe-plylst").src = "dir.vid.html";
             localStorage.setItem("direct-now", "main-vid");
             localStorage.setItem("direct-pre", "");
         };

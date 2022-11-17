@@ -7,7 +7,7 @@
         },
         {
             "anchor": "Story Trailer",
-            "link": "list.offi-trailer",
+            "link": "list.story-trailer",
             "masterTrack": "story-vid"
         },
         {
@@ -19,11 +19,6 @@
             "anchor": "3D Trailer",
             "link": "../",
             "masterTrack": "tease-vid"
-        },
-        {
-            "anchor": "Music Videos",
-            "link": "../",
-            "masterTrack": "music-vid"
         },
         {
             "anchor": "Terra",

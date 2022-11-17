@@ -41,5 +41,7 @@ $(document).ready(function () {
         let pointLink = master[0].trailer[nul].link;
 
         parent.document.getElementById("iframe-plylst").src = pointLink;
+        parent.$("#round-btn").show();
+        parent.$(".master-bar").width("100% - 30px");
     });
 });

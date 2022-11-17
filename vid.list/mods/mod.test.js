@@ -43,8 +43,8 @@ $(document).ready(function () {
         let grabTag = master[nul].tag; //grab tag
         let grabURL = master[nul].URL; //grab URL
         let newUrl = "https://www.youtube.com/embed/"+grabURL+"?autoplay=1";
-        parent.document.getElementById("prmry-vid-wrppr").setAttribute("src", newUrl);
-        parent.document.getElementById("plyr-title").innerHTML = grabTitle;
-        parent.document.getElementById("itm-tag").innerHTML = grabTag;
+        top.document.getElementById("prmry-vid-wrppr").setAttribute("src", newUrl);
+        top.document.getElementById("plyr-title").innerHTML = grabTitle;
+        top.document.getElementById("itm-tag").innerHTML = grabTag;
     });
 });

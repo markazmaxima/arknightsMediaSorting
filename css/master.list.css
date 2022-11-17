@@ -39,6 +39,10 @@ p{
     background-color: rgb(196, 196, 196);
 }
 
+.master-title{
+    font-size: 15px;
+}
+
 .back-panel {
     position: absolute;
     top: 30px;

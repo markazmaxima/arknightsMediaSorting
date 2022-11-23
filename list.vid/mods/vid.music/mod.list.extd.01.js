@@ -1,5 +1,5 @@
 "use strict";
-import master from '../json/list.extd.01.json' assert {type: 'json'};
+import master from '../../json/vid.music/list.extd.01.json' assert {type: 'json'};
 
 $(document).ready(function () {
     var i = 0;
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
         let getBtnLst = document.getElementById("btn-lst").childNodes[i]; //fetch btn nodes
         let getInBtn = getBtnLst.childNodes[1]; //seek btn, title
-        let getInfDur = getBtnLst.childNodes[2]; //seek btn, duration
+        let getInfDur = getBtnLst.childNodes[3]; //seek btn, duration
 
         $(getBtnLst).attr("onclick", "parent.document.getElementById('prmry-vid-wrppr').src = 'https://www.youtube.com/embed/"+grabURL+"?autoplay=1';parent.document.getElementById('plyr-title').innerHTML='"+grabTitle+"'");
 

@@ -6,40 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/plyr.list.info.css" type="text/css" />
+    <link rel="stylesheet" href="../../master.vid/css/master.list.css" type="text/css" />
 </head>
 
 <body>
     <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../mods/mod.anime.list.main.01.js" type="module"></script>
+    <script src="../mods/vid.anime/mod.list.main.01.js" type="module"></script>
 
-    <div>
-        <div style="position: fixed; width: 100%;">
-            <div class="playlist-sorter">
-                <a>
-                    <button id="swtch-prv" class="switch-left">&lsaquo;</button>
-                </a>
-                <div class="switch-title">
-                    <p>First</p>
-                </div>
-                <a>
-                    <button id="swtch-nxt" class="switch-right">&rsaquo;</button>
-                </a>
-            </div>
+    <div class="indi-selec">
+        <div class="front-panel">
+            <div id="btn-lst"><button id="btnLst-itm" value="" type="button" class="front-btn-col" onclick="">
+                    <p id="title" class="title"></p>
+                    <div id="dur" class="front-btn-inf-dur"></div>
+                </button></div>
         </div>
-        <div style="position: fixed; bottom: 0px; width: 100%;" hidden>
-            <div class="sorting-open-toggle">
-                <p>sort</p>
-            </div>
-            <div class="sorting-menu-bar">
-                <p>sorting system</p>
-            </div>
+
+        <div class="master-bar">
+            <button id="round-btn" class="round-btn"><b>&lsaquo;</b></button>
+            <a href="../../master.vid/master.list.html" class="master-home"><button
+                    class="master-home">Home</button></a><span class="master-title"> > Main Story Animation</span>
         </div>
-        <div style="height: 30px;"></div>
-        <div id="btn-lst"><button id="btnLst-itm" value="" type="button" class="cntnt-itm" onclick="">
-                <p id="title"></p><div id="dur" class="content-duration"></div>
-            </button></div>
     </div>
+
+    <script src="../../master.vid/js/master.list.js"></script>
 </body>
 
 </html>

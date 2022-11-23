@@ -1,3 +1,0 @@
-// JavaScript Document
-
-// nothing yet...

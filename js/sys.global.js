@@ -27,4 +27,14 @@ $(document).ready(function(){
     function showSys() {
         $(".master-wrppr").show();
     };
+    $("#info-board-head-close").click(function(){
+        $("#info-board-head-close").hide();
+        $("#info-board-head-open").show();
+        $("#info-board").hide();
+    });
+    $("#info-board-head-open").click(function(){
+        $("#info-board-head-open").hide();
+        $("#info-board-head-close").show();
+        $("#info-board").show();
+    });
 });

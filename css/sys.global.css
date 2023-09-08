@@ -5,6 +5,32 @@
   user-select: none;
 }
 
+.info-board-head {
+  background-color: #424242;
+  color: white;
+  width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.info-board {
+  background-color: #555;
+  color: white;
+  width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.black-line {
+  position: inherit;
+  width: auto;
+  margin: 15px;
+  border: 1px solid black;
+}
+
 a {
   text-decoration: none;
 }
@@ -101,6 +127,12 @@ legend {
 @media (max-width: 1200px) {
   .master-cntr-wrppr{
     padding: 0px 150px;
+  }
+  .info-board-head {
+    width: auto;
+  }
+  .info-board {
+    width: auto;
   }
 }
 
